@@ -1,0 +1,58 @@
+[
+  {
+    "id": "5",
+    "created_at": "2019-07-18 15:23:32",
+    "updated_at": "2019-07-18 15:23:32",
+    "blog_date": "2019-07-23 15:22:00",
+    "translations": {
+      "bg": {
+        "title": "Сладоледът е полезен!",
+        "description": "<p>Сладоледът е полезен!&nbsp;</p>\r\n\r\n<p>На времето Хипократ е съветвал - яще &nbsp;&quot;замразен крем &quot;&nbsp;за подобряване на общото състояние на организма.</p>\r\n\r\n<p>Сладоледът стимулира &quot;&nbsp;хормона на щастието &quot;, което означава че&nbsp;перпазва от стрес,&nbsp;намалява преумората и&nbsp;повишава настроението.</p>\r\n\r\n<p>Може да се използва като кръвоспиращо средство &nbsp;и за закаляване на организма.</p>",
+        "image": "5da97ee50b58c700094484.jpg",
+        "image_alt": "Алтернативен текст на изображението",
+        "image_title": "Заглавие на изображението",
+        "seo_title": "| Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "SEO / мета описание на страницата",
+        "slug": "blog-4"
+      },
+      "en": {
+        "title": "Ice cream is useful!",
+        "description": "<p>Ice cream is useful!</p>\r\n\r\n<p>Hippocrates advised at the time - eats&nbsp;&quot;frozen cream&quot; to improve the general condition of the body.</p>\r\n\r\n<p>Ice cream stimulates the &quot;hormone of happiness&quot;, which means that it relieves stress, reduces fatigue and boosts mood.</p>\r\n\r\n<p>It can be used as a blood clotting agent and for hardening the body.</p>",
+        "image": "5da9a6aab7e6b988681622.jpg",
+        "image_alt": "Image alt",
+        "image_title": "Image title",
+        "seo_title": "| Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "Seo description",
+        "slug": "blog-title-4"
+      }
+    }
+  },
+  {
+    "id": "6",
+    "created_at": "2019-07-19 12:48:44",
+    "updated_at": "2019-07-19 12:49:35",
+    "blog_date": "2019-07-23 17:32:00",
+    "translations": {
+      "bg": {
+        "title": "7 доказани ползи от употребата на какао",
+        "description": "<p>От преди стотици години какаото се е използвало по време на религиозни ритуали и в медицината по целия свят. Растението какао произхожда от Северна и Южна Америка и се разпространява в Европа с течение на времето. Какаото се използва за намаляване на наддаване на тегло, умора, стимулиране на нервната система и подобряване на храносмилателната функция.</p>\r\n\r\n<p>Ето още 7 доказани ползи от употребата на какао:</p>\r\n\r\n<p>1) Подобрява настроението<br />\r\n2) Намалява запекa<br />\r\n3) Понижава кръвното налягане<br />\r\n4) Предпазва кожата от UV лъчи<br />\r\n5) Намалява лошия холестерол<br />\r\n6) Може да лекува мозъчни нарушения<br />\r\n7) Може да предотврати сърдечните заболявания</p>",
+        "image": "5d31a00c43193025957730.jpg",
+        "image_alt": "7 доказани ползи от употребата на какао",
+        "image_title": "7 доказани ползи от употребата на какао",
+        "seo_title": "7 доказани ползи от употребата на какао | Блог | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "От преди стотици години какаото се е използвало по време на религиозни ритуали и в медицината по целия свят. Растението какао произхожда от Северна и Южна Америка и се разпространява в Европа с течение на времето.",
+        "slug": "7-dokazani-polzi-ot-upotrebata-na-kakao"
+      },
+      "en": {
+        "title": "7 Proven Health Benefits of Cocoa",
+        "description": "<p>Hundreds of years ago, cocoa was used during religious rituals and in medicine around the world. The cocoa plant is native to the Americas and has spread throughout Europe over time. Cocoa is used to reduce weight gain, fatigue, stimulate the nervous system and improve digestive function.</p>\r\n\r\n<p>Here are 7 more proven benefits of using cocoa:</p>\r\n\r\n<p>1) Improves mood<br />\r\n2) Reduces constipation<br />\r\n3) Lowers blood pressure<br />\r\n4) Protects skin from UV rays<br />\r\n5) Reduces bad cholesterol<br />\r\n6) Can cure brain disorders<br />\r\n7) Can prevent heart disease</p>",
+        "image": "5d31a00c6e4af870149056.jpg",
+        "image_alt": "Cocoa",
+        "image_title": "Cocoa",
+        "seo_title": "7 proven benefits of using cocoa Blog | Sweet Fiesta - manufacturer of pastry covers, glazes, creams and pastes",
+        "seo_description": "Hundreds of years ago, cocoa was used during religious rituals and in medicine around the world. The cocoa plant is native to the Americas and has spread throughout Europe over time.",
+        "slug": "7-proven-health-benefits-of-cocoa"
+      }
+    }
+  }
+]

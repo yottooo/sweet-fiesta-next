@@ -1,0 +1,46 @@
+[
+  {
+    "id": "1",
+    "updated_at": null,
+    "translations": {
+      "bg": {
+        "title": "Сладка Фиеста...",
+        "subtitle": "Животът е красив когато правим това което обичаме!....",
+        "description": "<p>Сладка Фиеста е водещ български производител на <strong>какаов крем, кувертюр и глазури за сладолед.&nbsp;</strong>Произвежда и <strong>фарситури, студени кремове,&nbsp;емулгатори</strong>&nbsp;<strong>и подобрители </strong>за сладкарската промишленост. Целта ни е постоянно високо качество на&nbsp;производството ни.</p>\r\n\r\n<p>Философията ни е че трябва да надминаваме очакванията на клиентите ни.&nbsp;Затова, чрез постоянно усъвършенстване на обслужването и продуктите ни, ние винаги сме готови да посрещнем&nbsp;пазарните изисквания. Залагаме на разбирането на&nbsp;нуждите на партньорите ни и се опитваме да го постигаме, като винаги сме отворени за&nbsp;диалог. Винаги гарантираме изпълнението на критериите им, а именно да предлагаме най-високото качество!.....</p>",
+        "image": "5d4c1e9210d86792782150.jpg",
+        "image_alt": "Шоколадови глазури",
+        "image_title": "Шоколадови глазури",
+        "image_banner1": "5d35c6f548b27122705915.jpg",
+        "image_alt_banner1": "Кремове и пасти",
+        "image_title_banner1": "Кремове и пасти",
+        "image_banner2": "5d35c6f5491e0184007533.jpg",
+        "image_alt_banner2": "Кувертюри и глазури",
+        "image_title_banner2": "Кувертюри и глазури",
+        "seo_title": "Сладка Фиеста - производител на кувертюри, глазури, кремове, фарситури, емулгатори и подобрители",
+        "seo_description": "Сладка Фиеста е водещ български производител на какаов крем, кувертюр и глазури за сладолед. Произвежда и фарситури, студени кремове, емулгатори и подобрители за сладкарската промишленост. Целта ни е постоянно високо качество на производството ни.",
+        "link_banner1": "http://preview.sweetfiesta.bg/bg/products?kategoriya=krem",
+        "link_banner2": "http://preview.sweetfiesta.bg/bg/products?kategoriya=kuvertiur",
+        "updated_at": "2019-08-08 16:07:30"
+      },
+      "en": {
+        "title": "Sweet Fiesta",
+        "subtitle": "Sweet Fiesta makes your live sweeter!",
+        "description": "<p>Sweet Fiesta is a leading Bulgarian producer of cocoa cream, cover and ice cream. It also manufactures hair extensions, cold creams, emulsifiers and enhancers for the confectionery industry. Our goal is to constantly produce high quality of our production.</p>\r\n\r\n<p>Our philosophy is that we must exceed our customers&#39; expectations. Therefore, by constantly improving our services and products, we are always ready to meet market requirements. We are committed to understanding the needs of our partners and trying to achieve it, always open to dialogue. We always guarantee the fulfillment of their criteria, namely to offer the highest quality! .....</p>",
+        "image": "5da9a16812f67956069512.jpg",
+        "image_alt": "Cocoa Creams",
+        "image_title": "Cocoa Creams",
+        "image_banner1": "5d35c89970a89057657492.jpg",
+        "image_alt_banner1": "Creams and Pastes",
+        "image_title_banner1": "Creams and Pastes",
+        "image_banner2": "5d35c89970fa8951262484.jpg",
+        "image_alt_banner2": "Couvertures and Glazes",
+        "image_title_banner2": "Couvertures and Glazes",
+        "seo_title": "Sweet Fiesta - producer of confectionery couverture, glazes, creams and pastes",
+        "seo_description": "Sweet Fiesta is a leading producer of cocoa cream, bedspreads and toppings for ice cream and pastry IN BULGARIA. Our goal is the consistent high quality of our production.",
+        "link_banner1": "http://preview.sweetfiesta.bg/en/products?category=cream",
+        "link_banner2": "http://preview.sweetfiesta.bg/en/products?category=couverture",
+        "updated_at": "2019-10-18 14:26:32"
+      }
+    }
+  }
+]

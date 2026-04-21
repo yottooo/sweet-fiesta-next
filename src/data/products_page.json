@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "updated_at": null,
+    "translations": {
+      "bg": {
+        "title": "Продукти",
+        "seo_title": "Продукти | Сладка Фиеста - производител на  кувертюри, глазури, кремове и пасти, торти, сухи смеси, емулгатори",
+        "seo_description": "Категории с продукти на Сладка Фиеста. Какаови кремове,  сладкарски кремове, кувертюри,течни шоколади, глазури, емулгатори, сухи смеси, торти!",
+        "image": "5da869c32823e499483568.jpg",
+        "description": " "
+      },
+      "en": {
+        "title": "Products",
+        "seo_title": "Confectionery Products | Sweet Fiesta - producer of confectionery couverture, glazes, creams and pastes",
+        "seo_description": "Categories of products from Sweet Fiesta. Cocoa creams, bedspreads, liquid chocolate, glazes!",
+        "image": "5da9a8852836a687218810.jpg",
+        "description": " "
+      }
+    }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "updated_at": "2020-01-16 09:54:41",
+    "position": "0",
+    "created_at": "2019-07-17 15:31:12",
+    "translations": {
+      "bg": {
+        "title": "Свържете се с нас",
+        "description": null,
+        "phone": "0888 733 606",
+        "email": "nimas64_88@abv.bg",
+        "facebook": "https://facebook.com",
+        "youtube": "https://youtube.com",
+        "linkedin": null,
+        "address": "с. Войводиново, ул.Оборище 29",
+        "footer_text": "Сладка Фиеста се намира в с.Войводиново, където са разположени централният ни офис и производствената база.",
+        "email_contact_form": "nimas64_88@abv.bg",
+        "seo_title": "Контакти | Сладка Фиеста - производител на кувертюри, глазури, кремове, фарситури и подобрители.",
+        "seo_description": "Seo description",
+        "image": "5da86c077740f328385484.jpg",
+        "phone_1": "0884 782 448",
+        "phone_2": null,
+        "phone_3": null,
+        "phone_4": null,
+        "email_1": null,
+        "email_2": null,
+        "email_3": null,
+        "email_4": null
+      },
+      "en": {
+        "title": "Contact us",
+        "description": null,
+        "phone": "0888 733 606",
+        "email": "nimas64_88@abv.bg",
+        "facebook": "https://facebook.com",
+        "youtube": "https://youtube.com",
+        "linkedin": "https://linkedin.com",
+        "address": "Voivodinovo village, Oborishte 29",
+        "footer_text": "Sweet Fiesta is located in the village of Voivodinovo, where our head office and production base are located.",
+        "email_contact_form": "nimas64_88@abv.bg",
+        "seo_title": "Contacts | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "<p>Seo description</p>",
+        "image": "5d36f6f34cbdd410348623.jpg",
+        "phone_1": "0884 782 448",
+        "phone_2": null,
+        "phone_3": null,
+        "phone_4": null,
+        "email_1": null,
+        "email_2": null,
+        "email_3": null,
+        "email_4": null
+      }
+    }
+  }
+]
