@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Solena-Regular';
-    src: url('../fonts/Solena/Solena-Regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ url('../fonts/Solena/Solena-Regular.woff') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    src: url(/fonts/Solena/Solena-Regular.woff) format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ url(/fonts/Solena/Solena-Regular.woff) format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 * {
@@ -1951,7 +1951,7 @@ body,
     content: "";
     height: 500%;
     width: 200%;
-    background: url(assets/img/pattern-bg.png);
+    background: url(/images/static/pattern-bg.png);
     z-index: -1;
     background-attachment: fixed;
 }
@@ -4383,7 +4383,7 @@ footer.pattern::before {
     content: "";
     height: 100%;
     width: 100%;
-    background: url(assets/img/pattern.png);
+    background: url(/images/static/pattern.png);
 }
 
 footer .f-items {

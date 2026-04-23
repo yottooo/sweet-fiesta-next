@@ -1,0 +1,92 @@
+@media only screen and (min-width: 768px) {
+  .banner-area,
+  .banner-area .carousel,
+  .banner-area .carousel-inner,
+  .banner-area .item {
+    min-height: 920px;
+  }
+
+  .banner-area .transparent-nav .content {
+    padding-top: 150px;
+    padding-bottom: 180px;
+  }
+
+  .banner-area .item.bg-cover {
+    background-position: center 42%;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .top-bar-area {
+    display: block;
+  }
+
+  .top-bar-area .address-info {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .top-bar-area .address-info .info.box {
+    display: inline-block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .top-bar-area .info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .top-bar-area .info li {
+    float: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .top-bar-area .social {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    padding-top: 18px;
+  }
+
+  .top-bar-area .social.text-right {
+    text-align: center;
+  }
+
+  .top-bar-area .social.text-right ul li {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .banner-area .transparent-nav .content {
+    padding-top: 40px;
+    padding-bottom: 120px;
+  }
+
+  .banner-area,
+  .banner-area .carousel,
+  .banner-area .carousel-inner,
+  .banner-area .item {
+    min-height: 980px;
+  }
+
+  .banner-area .item.bg-cover {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .banner-area.ds-fonts h2 {
+    font-size: 52px;
+    line-height: 1.15;
+  }
+
+  .banner-area h1 {
+    font-size: 74px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+}
