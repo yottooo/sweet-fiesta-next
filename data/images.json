@@ -1,0 +1,110 @@
+[
+  {
+    "id": "20",
+    "position": "0",
+    "gallery_id": "3",
+    "image": "5d371b2cd5694150838783.jpg",
+    "updated_at": "2019-07-23 16:35:24",
+    "created_at": "2019-07-23 13:18:17",
+    "translations": {
+      "bg": {
+        "image_alt": "Шоколадов кувертюр",
+        "image_title": "Шоколадов кувертюр"
+      },
+      "en": {
+        "image_alt": "Chocolate couverture",
+        "image_title": "Chocolate couverture"
+      }
+    }
+  },
+  {
+    "id": "19",
+    "position": "0",
+    "gallery_id": "3",
+    "image": "5d371b2cd65ba681006864.jpg",
+    "updated_at": "2019-07-23 16:35:24",
+    "created_at": "2019-07-23 13:18:02",
+    "translations": {
+      "bg": {
+        "image_alt": "Еклери с шоколадова заливка",
+        "image_title": "Еклери с шоколадова заливка"
+      },
+      "en": {
+        "image_alt": "Ecleers with chocolate coating",
+        "image_title": "Ecleers with chocolate coating"
+      }
+    }
+  },
+  {
+    "id": "18",
+    "position": "0",
+    "gallery_id": "3",
+    "image": "5d371b2cd728d920423767.jpg",
+    "updated_at": "2019-07-23 16:35:24",
+    "created_at": "2019-07-23 13:10:07",
+    "translations": {
+      "bg": {
+        "image_alt": "Понички с шоколадова заливка",
+        "image_title": "Понички с шоколадова заливка"
+      },
+      "en": {
+        "image_alt": "Donuts with chocolate coating",
+        "image_title": "Donuts with chocolate coating"
+      }
+    }
+  },
+  {
+    "id": "21",
+    "position": "0",
+    "gallery_id": "3",
+    "image": "5d37147d48361655752400.jpg",
+    "updated_at": "2019-07-23 16:06:53",
+    "created_at": "2019-07-23 16:06:53",
+    "translations": {
+      "bg": {
+        "image_alt": "Еклери с бял крем",
+        "image_title": "Еклери с бял крем"
+      },
+      "en": {
+        "image_alt": "Ecleers with white cream",
+        "image_title": "Ecleers with white cream"
+      }
+    }
+  },
+  {
+    "id": "22",
+    "position": "0",
+    "gallery_id": "3",
+    "image": "5d37147d48e49256447679.jpg",
+    "updated_at": "2019-07-23 16:06:53",
+    "created_at": "2019-07-23 16:06:53",
+    "translations": {
+      "bg": {
+        "image_alt": "Шоколадова паста",
+        "image_title": "Шоколадова паста"
+      },
+      "en": {
+        "image_alt": "Chocolate paste",
+        "image_title": "Chocolate paste"
+      }
+    }
+  },
+  {
+    "id": "23",
+    "position": "0",
+    "gallery_id": "3",
+    "image": "5d37147d4946b073832437.jpg",
+    "updated_at": "2019-07-23 16:06:53",
+    "created_at": "2019-07-23 16:06:53",
+    "translations": {
+      "bg": {
+        "image_alt": "Торта с шоколадова глазура",
+        "image_title": "Торта с шоколадова глазура"
+      },
+      "en": {
+        "image_alt": "Cake with chocolate glaze",
+        "image_title": "Cake with chocolate glaze"
+      }
+    }
+  }
+]

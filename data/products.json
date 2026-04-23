@@ -1,0 +1,1394 @@
+[
+  {
+    "id": "2",
+    "category_id": "2",
+    "position": "2",
+    "created_at": "2019-07-19 09:20:17",
+    "updated_at": "2019-10-22 11:46:20",
+    "translations": {
+      "bg": {
+        "title": "какаов кувертюр - лукс",
+        "description": " ",
+        "image": null,
+        "image_alt": "какаов кувертюр - лукс",
+        "image_title": "какаов кувертюр - лукс",
+        "seo_title": "какаов кувертюр - лукс | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cocoa cover - luxury",
+        "description": " ",
+        "image": null,
+        "image_alt": "cocoa cover - luxury",
+        "image_title": "cocoa cover - luxury",
+        "seo_title": "Peanut paste | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "Suitable for flavoring creams and whiped cream. Suitable for gluing of sweets and confectionery fillings.Tastes like sweet peanut butter. Net weight: 5 kg",
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "3",
+    "category_id": "2",
+    "position": "3",
+    "created_at": "2019-07-19 09:21:49",
+    "updated_at": "2020-01-16 09:41:28",
+    "translations": {
+      "bg": {
+        "title": "Какаов кувертюр - натурален",
+        "description": " ",
+        "image": "5e20124a6934e394861610.jpg",
+        "image_alt": "Какаов кувертюр - натурален",
+        "image_title": "Какаов кувертюр - натурален",
+        "seo_title": "Какаов кувертюр - натурален  | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "С изразен цвят на какао.Подходящ за тункване на сладкарски изделия. Нето: 5 кг",
+        "is_published": "1"
+      },
+      "en": {
+        "title": "Cocoa couverture natural",
+        "description": " ",
+        "image": "5e2013a851aa7060589237.jpg",
+        "image_alt": null,
+        "image_title": null,
+        "seo_title": "| Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "In terms of color kakao.Suitable for Coated confectionery. Net weight: 5 kg",
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "4",
+    "category_id": "1",
+    "position": "20",
+    "created_at": "2019-07-19 16:42:59",
+    "updated_at": "2020-01-16 09:52:20",
+    "translations": {
+      "bg": {
+        "title": "какаов крем - шокотермо",
+        "description": " ",
+        "image": "5e201634ac4b5099487963.jpg",
+        "image_alt": "какаов крем - шокотермо",
+        "image_title": "какаов крем - шокотермо",
+        "seo_title": "какаов крем - шокотермо | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cocoa cream - shoco termo",
+        "description": " ",
+        "image": "5e201634ad8c9691370144.jpg",
+        "image_alt": "cocoa cream - shoco termo",
+        "image_title": "cocoa cream - shoco termo",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "5",
+    "category_id": "1",
+    "position": "19",
+    "created_at": "2019-07-19 16:43:40",
+    "updated_at": "2019-11-08 11:05:51",
+    "translations": {
+      "bg": {
+        "title": "Какаов Крем - Марти",
+        "description": " ",
+        "image": "5dc52fef547f1971303221.jpg",
+        "image_alt": "Какаов Крем МАРТИ",
+        "image_title": "Какаов Крем МАРТИ",
+        "seo_title": "Какаов Крем МАРТИ | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "С аромат на лешник. Използва се за овкусяване на сметани, кремове и сладолед.Подходящ за фино сладкарство/производство на торти/... Нето: 10 кг",
+        "is_published": "1"
+      },
+      "en": {
+        "title": "Cocoa Cream Marty",
+        "description": " ",
+        "image": "5dc52fef56218835529801.jpg",
+        "image_alt": null,
+        "image_title": null,
+        "seo_title": "Cocoa Cream Marty | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "With a hazelnut aroma. Used for flavoring cream, creams and ice cream. Suitable for fine pastry / cake production / . Net weight: 10 kg",
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "6",
+    "category_id": "1",
+    "position": "16",
+    "created_at": "2019-07-19 16:44:10",
+    "updated_at": "2020-01-16 09:47:18",
+    "translations": {
+      "bg": {
+        "title": "какаов крем - шоколешник",
+        "description": " ",
+        "image": "5e20150634411090657936.jpg",
+        "image_alt": "какаов крем - шоколешник",
+        "image_title": "какаов крем - шоколешник",
+        "seo_title": "какаов крем - шоколешник | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cocoa cream - shoco hazelnut",
+        "description": " ",
+        "image": "5e20150634e53505765911.jpg",
+        "image_alt": "cocoa cream - shoco hazelnut",
+        "image_title": "cocoa cream - shoco hazelnut",
+        "seo_title": "Cocoa Cream PONB | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "7",
+    "category_id": "1",
+    "position": "14",
+    "created_at": "2019-07-19 16:44:51",
+    "updated_at": "2019-10-22 11:41:56",
+    "translations": {
+      "bg": {
+        "title": "какаов крем - шокоориндж",
+        "description": " ",
+        "image": null,
+        "image_alt": "какаов крем - шокоориндж",
+        "image_title": "какаов крем - шокоориндж",
+        "seo_title": "какаов крем - шокоориндж | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cocoa cream - shoco orange",
+        "description": " ",
+        "image": null,
+        "image_alt": "cocoa cream - shoco orange",
+        "image_title": "cocoa cream - shoco orange",
+        "seo_title": "Cocoa Cream PON | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "10",
+    "category_id": "1",
+    "position": null,
+    "created_at": "2019-07-25 09:13:05",
+    "updated_at": "2020-01-16 09:45:23",
+    "translations": {
+      "bg": {
+        "title": "какаов крем - макао",
+        "description": " ",
+        "image": "5e20149325e78913021870.jpg",
+        "image_alt": "какаов крем - макао",
+        "image_title": "какаов крем - макао",
+        "seo_title": "какаов крем - макао | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "какаов крем - макао | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cocoa cream - macao",
+        "description": " ",
+        "image": "5e201493267d5634352704.jpg",
+        "image_alt": "cocoa cream - macao",
+        "image_title": "cocoa cream - macao",
+        "seo_title": "cocoa cream - macao | Sweet Fiesta - manufacturer of pastry covers, glazes, creams and pastes",
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "11",
+    "category_id": "2",
+    "position": null,
+    "created_at": "2019-07-25 09:31:12",
+    "updated_at": "2020-01-16 09:40:34",
+    "translations": {
+      "bg": {
+        "title": "какаов лауринов кувертюр с вкус на лешник",
+        "description": " ",
+        "image": "5e20131d76a88790846306.jpg",
+        "image_alt": "какаов лауринов кувертюр с вкус на лешник",
+        "image_title": "какаов лауринов кувертюр с вкус на лешник",
+        "seo_title": "какаов лауринов кувертюр с вкус на лешник | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cocoa laurel flavored hazelnut",
+        "description": " ",
+        "image": "5e20137287b01925741734.jpg",
+        "image_alt": "cocoa laurel flavored hazelnut",
+        "image_title": "cocoa laurel flavored hazelnut",
+        "seo_title": "cocoa laurel flavored hazelnut | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "With a darker cocoa color. Suitable for Coated confectionery. Net weight: 5 kg",
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "12",
+    "category_id": "2",
+    "position": null,
+    "created_at": "2019-07-25 09:32:38",
+    "updated_at": "2020-01-16 09:42:19",
+    "translations": {
+      "bg": {
+        "title": "какаов кувертюр - млечен",
+        "description": " ",
+        "image": null,
+        "image_alt": "какаов кувертюр - млечен",
+        "image_title": "какаов кувертюр - млечен",
+        "seo_title": "Млечен кувертюр  | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "С цвят на млечен шоколад.Подходящ за тункване на сладкарски изделия. Нето: 5 кг",
+        "is_published": "1"
+      },
+      "en": {
+        "title": "Milk couverture",
+        "description": " ",
+        "image": null,
+        "image_alt": "Milk couverture",
+        "image_title": "Milk couverture",
+        "seo_title": "Milk couverture not lauric | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "With a milky chocolate color.Suitable for Coated confectionery. Net weight: 5 kg",
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "57",
+    "category_id": "1",
+    "position": null,
+    "created_at": "2020-01-16 09:54:41",
+    "updated_at": "2020-01-16 09:54:41",
+    "translations": {
+      "bg": {
+        "title": "фъстъчена паста",
+        "description": " ",
+        "image": "5e2016c11e4cb659847668.jpg",
+        "image_alt": "фъстъчена паста",
+        "image_title": "фъстъчена паста",
+        "seo_title": "фъстъчена паста",
+        "seo_description": "фъстъчена паста",
+        "is_published": "1"
+      },
+      "en": {
+        "title": "peanut paste",
+        "description": " ",
+        "image": "5e2016c11ecf0701819297.jpg",
+        "image_alt": "peanut paste",
+        "image_title": "peanut paste",
+        "seo_title": "peanut paste",
+        "seo_description": "peanut paste",
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "14",
+    "category_id": "2",
+    "position": null,
+    "created_at": "2019-07-25 09:35:26",
+    "updated_at": "2020-01-16 09:40:50",
+    "translations": {
+      "bg": {
+        "title": "кувертюр - бял",
+        "description": " ",
+        "image": "5e20120d09a66887833449.jpg",
+        "image_alt": "кувертюр - бял",
+        "image_title": "кувертюр - бял",
+        "seo_title": "Бял кувертюр нелауринов | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "Подходящ за тункване на сладкарски изделия.",
+        "is_published": "1"
+      },
+      "en": {
+        "title": "White couverture",
+        "description": " ",
+        "image": "5e2013830079b374700102.jpg",
+        "image_alt": "White couverture",
+        "image_title": "White couverture",
+        "seo_title": "White non-lauric couverture | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": "Suitable for Coated confectionery. Net weight: 5 kg",
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "18",
+    "category_id": "1",
+    "position": null,
+    "created_at": "2019-07-25 09:46:11",
+    "updated_at": "2019-10-22 11:36:17",
+    "translations": {
+      "bg": {
+        "title": "Какаов крем - Мокачино",
+        "description": " ",
+        "image": null,
+        "image_alt": null,
+        "image_title": null,
+        "seo_title": "Какаов крем Мокачино | Сладка Фиеста - производител на сладкарски кувертюри, глазури, кремове и пасти",
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "Cocoa Cream - Mocachino",
+        "description": " ",
+        "image": null,
+        "image_alt": "Cocoa Cream - Mocachino",
+        "image_title": "Cocoa Cream - Mocachino",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "41",
+    "category_id": "6",
+    "position": "13",
+    "created_at": "2019-10-17 15:03:43",
+    "updated_at": "2019-10-22 12:34:42",
+    "translations": {
+      "bg": {
+        "title": "фарситура карамел",
+        "description": " ",
+        "image": "5da864a9193fd225072129.jpg",
+        "image_alt": "фарситура карамел",
+        "image_title": "фарситура карамел",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold glaze caramel",
+        "description": " ",
+        "image": "5daecd321760b631020480.jpg",
+        "image_alt": "cold glaze caramel",
+        "image_title": "cold glaze caramel",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "21",
+    "category_id": "6",
+    "position": null,
+    "created_at": "2019-10-04 13:04:42",
+    "updated_at": "2019-10-22 12:20:10",
+    "translations": {
+      "bg": {
+        "title": "Фарситура Банан",
+        "description": " ",
+        "image": "5da862e5dcc88855638816.jpg",
+        "image_alt": "фарситура банан",
+        "image_title": "фарситура банан",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold glaze banan",
+        "description": " ",
+        "image": "5daec9caae104807497610.jpg",
+        "image_alt": "cold glaze banan",
+        "image_title": "cold glaze banan",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "22",
+    "category_id": "6",
+    "position": "18",
+    "created_at": "2019-10-04 13:08:52",
+    "updated_at": "2019-10-22 12:32:36",
+    "translations": {
+      "bg": {
+        "title": "Фарситура Боровинка",
+        "description": " ",
+        "image": "5da8627658706765618257.jpg",
+        "image_alt": "фарситура боровинка",
+        "image_title": "фарситура боровинка",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold glaze blueberry",
+        "description": " ",
+        "image": "5daeccb41975a110181303.jpg",
+        "image_alt": "cold glaze blueberry",
+        "image_title": "cold glaze blueberry",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "23",
+    "category_id": "6",
+    "position": "1",
+    "created_at": "2019-10-04 13:10:29",
+    "updated_at": "2019-10-22 12:32:01",
+    "translations": {
+      "bg": {
+        "title": "Фарситура Брюле",
+        "description": " ",
+        "image": "5da8633fcbdac839523697.jpg",
+        "image_alt": "брюле",
+        "image_title": "фарситура брюле",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold glaze brulee",
+        "description": " ",
+        "image": "5daecc91eb009679665208.jpg",
+        "image_alt": "cold glaze brulee",
+        "image_title": "cold glaze brulee",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "24",
+    "category_id": "7",
+    "position": "1",
+    "created_at": "2019-10-04 13:12:24",
+    "updated_at": "2019-10-22 12:41:59",
+    "translations": {
+      "bg": {
+        "title": "Фреш гел - емулгираща паста за пандишпанови теста",
+        "description": " ",
+        "image": "5da9622e39cf3103819986.jpg",
+        "image_alt": "пандишпанови теста",
+        "image_title": "Фреш гел - емулгираща паста за пандишпанови теста",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "Fresh gel - emulsifying paste for pandishpanic dough",
+        "description": " ",
+        "image": "5daecee7d78f8585425346.jpg",
+        "image_alt": "Fresh gel - emulsifying paste for pandishpanic dough",
+        "image_title": "Fresh gel - emulsifying paste for pandishpanic dough",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "25",
+    "category_id": "5",
+    "position": null,
+    "created_at": "2019-10-04 14:28:37",
+    "updated_at": "2019-10-22 12:02:17",
+    "translations": {
+      "bg": {
+        "title": "Микс за мъфини - шоколад",
+        "description": " ",
+        "image": "5da9620f7055d785602873.jpg",
+        "image_alt": "мъфин",
+        "image_title": "микс за мъфини шоколад",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "Muffin mix - chocolate",
+        "description": " ",
+        "image": "5daec5993eeb3569227159.jpg",
+        "image_alt": "Muffin mix - chocolate",
+        "image_title": "Muffin mix - chocolate",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "26",
+    "category_id": "5",
+    "position": null,
+    "created_at": "2019-10-04 14:34:22",
+    "updated_at": "2019-10-18 14:55:16",
+    "translations": {
+      "bg": {
+        "title": "Микс за мъфини - ванилия",
+        "description": " ",
+        "image": "5da961b7ac28a087408360.jpg",
+        "image_alt": "мъфин",
+        "image_title": "Микс за мъфини - ванилия",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "Mix of muffins - vanilla",
+        "description": " ",
+        "image": "5da9a8246239a998066607.jpg",
+        "image_alt": "Mix of muffins - vanilla",
+        "image_title": null,
+        "seo_title": "Mix of muffins - vanilla",
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "27",
+    "category_id": "5",
+    "position": null,
+    "created_at": "2019-10-04 14:36:16",
+    "updated_at": "2019-10-22 12:03:15",
+    "translations": {
+      "bg": {
+        "title": "Микс за козунак",
+        "description": " ",
+        "image": "5da961d0ac6c2845259507.jpg",
+        "image_alt": "козунак",
+        "image_title": "микс за козунак",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "mixture for the еaster bread",
+        "description": " ",
+        "image": "5daec5d3d0be6339053917.jpg",
+        "image_alt": "mixture for the еaster bread",
+        "image_title": "mixture for the еaster bread",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "28",
+    "category_id": "7",
+    "position": "2",
+    "created_at": "2019-10-04 14:42:41",
+    "updated_at": "2019-10-22 12:43:42",
+    "translations": {
+      "bg": {
+        "title": "Бакпулвер",
+        "description": " ",
+        "image": null,
+        "image_alt": "Бакпулвер",
+        "image_title": "Бакпулвер",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "Backpulver",
+        "description": " ",
+        "image": null,
+        "image_alt": "Backpulver",
+        "image_title": "Backpulver",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "29",
+    "category_id": "7",
+    "position": "3",
+    "created_at": "2019-10-04 14:43:40",
+    "updated_at": "2019-10-22 12:48:17",
+    "translations": {
+      "bg": {
+        "title": "Подобрител за арабски хляб",
+        "description": " ",
+        "image": null,
+        "image_alt": "Подобрител за арабски хляб",
+        "image_title": "Подобрител за арабски хляб",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "Improver for arabic bread",
+        "description": " ",
+        "image": null,
+        "image_alt": "Improver for arabic bread",
+        "image_title": "Improver for arabic bread",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "30",
+    "category_id": "7",
+    "position": "4",
+    "created_at": "2019-10-04 14:46:12",
+    "updated_at": "2019-10-22 12:48:49",
+    "translations": {
+      "bg": {
+        "title": "Емулгиращ комплекс SC50 за сосове",
+        "description": " ",
+        "image": null,
+        "image_alt": "Емулгиращ комплекс SC50 за сосове",
+        "image_title": "Емулгиращ комплекс SC50 за сосове",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "Emulsifying complex SC50 for sauces",
+        "description": " ",
+        "image": null,
+        "image_alt": "Emulsifying complex SC50 for sauces",
+        "image_title": "Emulsifying complex SC50 for sauces",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "31",
+    "category_id": "3",
+    "position": null,
+    "created_at": "2019-10-04 14:47:45",
+    "updated_at": "2019-10-22 11:55:14",
+    "translations": {
+      "bg": {
+        "title": "млечна глазура",
+        "description": " ",
+        "image": null,
+        "image_alt": "млечна глазура",
+        "image_title": "млечна глазура",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "milk glaze",
+        "description": " ",
+        "image": null,
+        "image_alt": "milk glaze",
+        "image_title": "milk glaze",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "32",
+    "category_id": "3",
+    "position": null,
+    "created_at": "2019-10-04 14:48:42",
+    "updated_at": "2019-10-22 11:55:01",
+    "translations": {
+      "bg": {
+        "title": "Бяла глазура",
+        "description": " ",
+        "image": null,
+        "image_alt": "Бяла глазура",
+        "image_title": "Бяла глазура",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "White glaze",
+        "description": " ",
+        "image": null,
+        "image_alt": "White glaze",
+        "image_title": "White glaze",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "33",
+    "category_id": "3",
+    "position": null,
+    "created_at": "2019-10-04 14:49:42",
+    "updated_at": "2019-10-22 11:52:57",
+    "translations": {
+      "bg": {
+        "title": "глазура без захар",
+        "description": " ",
+        "image": null,
+        "image_alt": "глазура без захар",
+        "image_title": "глазура без захар",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "icing without sugar",
+        "description": " ",
+        "image": null,
+        "image_alt": null,
+        "image_title": null,
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "34",
+    "category_id": "3",
+    "position": null,
+    "created_at": "2019-10-04 14:50:36",
+    "updated_at": "2019-10-22 11:52:37",
+    "translations": {
+      "bg": {
+        "title": "шпрей глазура",
+        "description": " ",
+        "image": null,
+        "image_alt": "шпрей глазура",
+        "image_title": "шпрей глазура",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "spray glaze",
+        "description": " ",
+        "image": null,
+        "image_alt": "spray glaze",
+        "image_title": "spray glaze",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "35",
+    "category_id": "4",
+    "position": null,
+    "created_at": "2019-10-04 14:53:51",
+    "updated_at": "2019-10-22 11:59:40",
+    "translations": {
+      "bg": {
+        "title": "студен крем - еклер",
+        "description": " ",
+        "image": null,
+        "image_alt": "студен крем - еклер",
+        "image_title": "студен крем - еклер",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold cream - eclair",
+        "description": " ",
+        "image": null,
+        "image_alt": "cold cream - eclair",
+        "image_title": "cold cream - eclair",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "36",
+    "category_id": "4",
+    "position": null,
+    "created_at": "2019-10-04 14:54:41",
+    "updated_at": "2019-10-22 12:00:18",
+    "translations": {
+      "bg": {
+        "title": "студен крем - ванилия",
+        "description": " ",
+        "image": null,
+        "image_alt": "студен крем - ванилия",
+        "image_title": "студен крем - ванилия",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold vanilla cream",
+        "description": " ",
+        "image": null,
+        "image_alt": "cold vanilla cream",
+        "image_title": "cold vanilla cream",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "37",
+    "category_id": "4",
+    "position": "20",
+    "created_at": "2019-10-04 14:55:48",
+    "updated_at": "2019-10-22 11:57:45",
+    "translations": {
+      "bg": {
+        "title": "студен крем - млечен",
+        "description": " ",
+        "image": null,
+        "image_alt": "студен крем - млечен",
+        "image_title": "студен крем - млечен",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold cream - milky",
+        "description": " ",
+        "image": null,
+        "image_alt": null,
+        "image_title": null,
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "38",
+    "category_id": "4",
+    "position": "19",
+    "created_at": "2019-10-04 14:56:43",
+    "updated_at": "2019-10-22 11:58:01",
+    "translations": {
+      "bg": {
+        "title": "студен крем - йогурт",
+        "description": " ",
+        "image": null,
+        "image_alt": "студен крем - йогурт",
+        "image_title": "студен крем - йогурт",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold cream - yogurt",
+        "description": " ",
+        "image": null,
+        "image_alt": null,
+        "image_title": null,
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "39",
+    "category_id": "4",
+    "position": "18",
+    "created_at": "2019-10-04 14:57:31",
+    "updated_at": "2019-10-22 11:58:31",
+    "translations": {
+      "bg": {
+        "title": "студен крем - брюле",
+        "description": " ",
+        "image": null,
+        "image_alt": "студен крем - брюле",
+        "image_title": "студен крем - брюле",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold brulee cream",
+        "description": " ",
+        "image": null,
+        "image_alt": null,
+        "image_title": null,
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "40",
+    "category_id": "4",
+    "position": "17",
+    "created_at": "2019-10-04 14:58:19",
+    "updated_at": "2019-10-22 11:58:43",
+    "translations": {
+      "bg": {
+        "title": "студен крем - неутрал",
+        "description": " ",
+        "image": null,
+        "image_alt": "студен крем - неутрал",
+        "image_title": "студен крем - неутрал",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold cream - neutral",
+        "description": " ",
+        "image": null,
+        "image_alt": null,
+        "image_title": null,
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "42",
+    "category_id": "6",
+    "position": "15",
+    "created_at": "2019-10-17 15:04:19",
+    "updated_at": "2019-10-22 12:40:09",
+    "translations": {
+      "en": {
+        "title": "cold glaze dark caramel",
+        "description": " ",
+        "image": "5daecdaec80a4781156562.jpg",
+        "image_alt": "cold glaze dark caramel",
+        "image_title": "cold glaze dark caramel",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "bg": {
+        "title": "фарситура тъмен карамел",
+        "description": " ",
+        "image": "5da8658215665241687142.jpg",
+        "image_alt": "фарситура тъмен карамел",
+        "image_title": "фарситура тъмен карамел",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "43",
+    "category_id": "6",
+    "position": "14",
+    "created_at": "2019-10-17 15:04:55",
+    "updated_at": "2019-10-22 12:37:55",
+    "translations": {
+      "en": {
+        "title": "cold glaze light caramel",
+        "description": " ",
+        "image": "5daecdf383f60327011708.jpg",
+        "image_alt": "cold glaze light caramel",
+        "image_title": "cold glaze light caramel",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "bg": {
+        "title": "фарситура светъл карамел",
+        "description": " ",
+        "image": "5da86de2b1df6930129516.jpg",
+        "image_alt": "фарситура светъл карамел",
+        "image_title": "фарситура светъл карамел",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "44",
+    "category_id": "6",
+    "position": "12",
+    "created_at": "2019-10-17 15:10:34",
+    "updated_at": "2019-10-22 12:31:25",
+    "translations": {
+      "en": {
+        "title": "cold glaze chocolate",
+        "description": " ",
+        "image": "5daecc6d9f9e2024802280.jpg",
+        "image_alt": "cold glaze chocolate",
+        "image_title": "cold glaze chocolate",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "bg": {
+        "title": "фарситура шоколад",
+        "description": " ",
+        "image": "5da865022fb66604808850.jpg",
+        "image_alt": "фарситура шоколад",
+        "image_title": "фарситура шоколад",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "45",
+    "category_id": "6",
+    "position": "11",
+    "created_at": "2019-10-17 15:11:38",
+    "updated_at": "2019-10-22 12:30:27",
+    "translations": {
+      "en": {
+        "title": "cold glaze white chocolate",
+        "description": " ",
+        "image": "5daecc3317987622763520.jpg",
+        "image_alt": "cold glaze white chocolate",
+        "image_title": "cold glaze white chocolate",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "bg": {
+        "title": "фарситура бял шоколад",
+        "description": " ",
+        "image": "5da86e7d23f76290273895.jpg",
+        "image_alt": "фарситура бял шоколад",
+        "image_title": "фарситура бял шоколад",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "46",
+    "category_id": "6",
+    "position": "16",
+    "created_at": "2019-10-17 15:12:47",
+    "updated_at": "2019-10-22 12:29:15",
+    "translations": {
+      "bg": {
+        "title": "фарситура тофи карамел",
+        "description": " ",
+        "image": "5da86e43705ba280417670.jpg",
+        "image_alt": "фарситура тофи карамел",
+        "image_title": "фарситура тофи карамел",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold glaze toffee caramel",
+        "description": " ",
+        "image": "5daecbebc9e65360079568.jpg",
+        "image_alt": "cold glaze toffee caramel",
+        "image_title": "cold glaze toffee caramel",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "47",
+    "category_id": "6",
+    "position": "10",
+    "created_at": "2019-10-17 15:14:27",
+    "updated_at": "2019-10-22 12:28:12",
+    "translations": {
+      "en": {
+        "title": "cold glaze forest fruit",
+        "description": " ",
+        "image": "5daecbac81a73989062915.jpg",
+        "image_alt": "cold glaze forest fruit",
+        "image_title": "cold glaze forest fruit",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "bg": {
+        "title": "фарситура горски плод",
+        "description": " ",
+        "image": "5da8662b4e320999280852.jpg",
+        "image_alt": "фарситура горски плод",
+        "image_title": "фарситура горски плод",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "48",
+    "category_id": "6",
+    "position": "9",
+    "created_at": "2019-10-17 15:16:08",
+    "updated_at": "2019-10-22 12:26:07",
+    "translations": {
+      "en": {
+        "title": "cold glaze neutral",
+        "description": " ",
+        "image": "5daecb2f6f8b6263111695.jpg",
+        "image_alt": "cold glaze neutral",
+        "image_title": "cold glaze neutral",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "bg": {
+        "title": "фарситура неутрал",
+        "description": " ",
+        "image": "5da868373288e210541877.jpg",
+        "image_alt": "фарситура неутрал",
+        "image_title": "фарситура неутрал",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "49",
+    "category_id": "6",
+    "position": "8",
+    "created_at": "2019-10-17 15:17:08",
+    "updated_at": "2019-10-22 12:24:41",
+    "translations": {
+      "bg": {
+        "title": "фарситура лайм",
+        "description": " ",
+        "image": "5da8671817f92828324102.jpg",
+        "image_alt": "фарситура лайм",
+        "image_title": "фарситура лайм",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold glaze laim",
+        "description": " ",
+        "image": "5daecad99d263001768181.jpg",
+        "image_alt": "cold glaze laim",
+        "image_title": "cold glaze laim",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "50",
+    "category_id": "6",
+    "position": "7",
+    "created_at": "2019-10-17 15:18:37",
+    "updated_at": "2019-10-22 12:13:33",
+    "translations": {
+      "bg": {
+        "title": "фарситура малина",
+        "description": " ",
+        "image": "5da8676fe7fba383216378.jpg",
+        "image_alt": "фарситура малина",
+        "image_title": "фарситура малина",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold glaze raspberries",
+        "description": " ",
+        "image": "5daec83da1e05505984732.jpg",
+        "image_alt": "cold glaze raspberries",
+        "image_title": "cold glaze raspberries",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "51",
+    "category_id": "6",
+    "position": "6",
+    "created_at": "2019-10-17 15:22:37",
+    "updated_at": "2019-10-22 12:15:22",
+    "translations": {
+      "bg": {
+        "title": "фарситура киви",
+        "description": " ",
+        "image": "5da866be72679588615315.jpg",
+        "image_alt": "фарситура киви",
+        "image_title": "фарситура киви",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold glaze kiwi",
+        "description": " ",
+        "image": "5daec8aa8c510568960459.jpg",
+        "image_alt": "cold glaze kiwi",
+        "image_title": "cold glaze kiwi",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "52",
+    "category_id": "6",
+    "position": "5",
+    "created_at": "2019-10-17 15:24:37",
+    "updated_at": "2019-10-22 12:16:41",
+    "translations": {
+      "en": {
+        "title": "cold glaze orange",
+        "description": " ",
+        "image": "5daec8f9779a0945960277.jpg",
+        "image_alt": "cold glaze orange",
+        "image_title": "cold glaze orange",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "bg": {
+        "title": "фарситура портокал",
+        "description": " ",
+        "image": "5da868aaadf11960392302.jpg",
+        "image_alt": "фарситура портокал",
+        "image_title": "фарситура портокал",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "53",
+    "category_id": "6",
+    "position": "4",
+    "created_at": "2019-10-17 15:31:57",
+    "updated_at": "2019-10-22 12:18:52",
+    "translations": {
+      "bg": {
+        "title": "фарситура розово брюле",
+        "description": " ",
+        "image": "5da868f9e1dbf873973915.jpg",
+        "image_alt": "фарситура розово брюле",
+        "image_title": "фарситура розово брюле",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold glaze pink brulee",
+        "description": " ",
+        "image": "5daec97cdc80f250972051.jpg",
+        "image_alt": "cold glaze pink brulee",
+        "image_title": "cold glaze pink brulee",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "54",
+    "category_id": "6",
+    "position": "3",
+    "created_at": "2019-10-17 15:32:44",
+    "updated_at": "2019-10-22 12:21:27",
+    "translations": {
+      "en": {
+        "title": "cold glaze strawberry",
+        "description": " ",
+        "image": "5daeca1799196109901149.jpg",
+        "image_alt": "cold glaze strawberry",
+        "image_title": "cold glaze strawberry",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "bg": {
+        "title": "фарситура ягода",
+        "description": " ",
+        "image": "5da86da345509294692139.jpg",
+        "image_alt": "фарситура ягода",
+        "image_title": "фарситура ягода",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "55",
+    "category_id": "6",
+    "position": "2",
+    "created_at": "2019-10-17 15:33:20",
+    "updated_at": "2019-10-22 12:22:34",
+    "translations": {
+      "en": {
+        "title": "cold glaze tiramisu",
+        "description": " ",
+        "image": "5daeca5ab2685526611703.jpg",
+        "image_alt": "cold glaze tiramisu",
+        "image_title": "cold glaze tiramisu",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "bg": {
+        "title": "фарситура тирамису",
+        "description": " ",
+        "image": "5da86e155430f830293319.jpg",
+        "image_alt": "фарситура тирамису",
+        "image_title": "фарситура тирамису",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  },
+  {
+    "id": "56",
+    "category_id": "6",
+    "position": "1",
+    "created_at": "2019-10-17 15:33:58",
+    "updated_at": "2019-10-22 12:33:34",
+    "translations": {
+      "bg": {
+        "title": "фарситура бял шоколад и кокос",
+        "description": " ",
+        "image": "5da86eafe156f849568144.jpg",
+        "image_alt": "фарситура бял шоколад и кокос",
+        "image_title": "фарситура бял шоколад и кокос",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      },
+      "en": {
+        "title": "cold glaze white chocolate and coconut",
+        "description": " ",
+        "image": "5daecceed5714600552314.jpg",
+        "image_alt": "cold glaze white chocolate and coconut",
+        "image_title": "cold glaze white chocolate and coconut",
+        "seo_title": null,
+        "seo_description": null,
+        "is_published": "1"
+      }
+    }
+  }
+]

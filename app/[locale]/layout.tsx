@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/app/globals.css";
 import { getMessages } from "@/lib/i18n";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export async function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'bg' }];
@@ -14,7 +16,6 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const i18n = getMessages(locale);
 
   return (
     <html lang={locale}>
@@ -31,7 +32,10 @@ export default async function LocaleLayout({
         <link rel="stylesheet" href="/css/responsive.css" />
       </head>
       <body>
+        <Header locale={locale} />
         {children}
+        <Footer locale={locale} />
+        
         <script src="/js/jquery-1.12.4.min.js" defer></script>
         <script src="/js/bootstrap.min.js" defer></script>
         <script src="/js/equal-height.min.js" defer></script>
