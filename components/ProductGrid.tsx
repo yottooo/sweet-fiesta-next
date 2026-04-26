@@ -97,8 +97,8 @@ export default function ProductGrid({
             </div>
 
             <div className="col-md-9">
-              <div className="row text-center masonary">
-                <div className="menu-lists text-center col-3">
+              <div className="row text-center">
+                <div id="portfolio-grid" className="menu-lists text-center col-3">
                   {filteredProducts.map((product) => {
                     const productContent = getLocalizedTranslation(product, locale);
                     const category = categories.find(
@@ -112,21 +112,25 @@ export default function ProductGrid({
                     return (
                       <div key={product.id} className="item-single pf-item">
                         <div className="item item-p-p">
-                          {hasImage ? (
-                            <div className="thumb">
+                          <div className="thumb">
+                            {hasImage ? (
                               <img
                                 src={`/uploads/images/product_images/${productContent.image}`}
                                 alt={productContent.image_alt || productContent.title}
                                 title={productContent.image_title || productContent.title}
                               />
-                              <div className="overlay">
-                                <div className="content">
-                                  <h4>{productContent.title}</h4>
-                                  <span>{categoryTitle}</span>
-                                </div>
+                            ) : (
+                              <div className="placeholder-image">
+                                <i className="fa fa-picture-o"></i>
+                              </div>
+                            )}
+                            <div className="overlay">
+                              <div className="content">
+                                <h4>{productContent.title}</h4>
+                                <span>{categoryTitle}</span>
                               </div>
                             </div>
-                          ) : null}
+                          </div>
 
                           <div className="info product-info-match-height">
                             <h4>{productContent.title}</h4>

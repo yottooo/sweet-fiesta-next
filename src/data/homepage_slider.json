@@ -12,7 +12,7 @@
         "title": "Сладка Фиеста предлага разнообразие от",
         "subtitle": "какаови кувертюри и кремове, глазури, фарситури и емулсионни кремове!.....",
         "buttontittle": "виж всички продукти",
-        "buttonlink": "http://sweetfiesta.bg/bg/products"
+        "buttonlink": "/bg/products"
       },
       "en": {
         "image": "5da9a2d376016026096888.jpg",
@@ -21,7 +21,7 @@
         "title": "Sweet Fiesta offers a variety of",
         "subtitle": "cocoa blankets and creams, glazes, hair extensions and emulsion creams! .....",
         "buttontittle": "see all pproducts",
-        "buttonlink": "http://preview.sweetfiesta.bg/en/products"
+        "buttonlink": "/en/products"
       }
     }
   },
@@ -38,7 +38,7 @@
         "title": "и още",
         "subtitle": "....сухи смеси, емулгатори и подобрители!",
         "buttontittle": "Връзка с нас",
-        "buttonlink": "http://sweetfiesta.bg/bg/kontakti"
+        "buttonlink": "/bg/kontakti"
       },
       "en": {
         "image": "5da9a2e416617953302054.jpg",
@@ -47,7 +47,7 @@
         "title": "and more",
         "subtitle": ".... dry blends, emulsifiers and enhancers!",
         "buttontittle": "Contact Us",
-        "buttonlink": "http://preview.sweetfiesta.bg/bg/kontakti"
+        "buttonlink": "/bg/kontakti"
       }
     }
   }

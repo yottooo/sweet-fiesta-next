@@ -33,7 +33,8 @@ export default function Footer({ locale }: { locale: string }) {
                 <p>{contact.address}</p>
                 <ul>
                   <li>
-                    <span>{i18n["Телефон"] || "Phone"}: </span> {contact.phone}
+                    <span>{i18n["Телефон"] || "Phone"}: </span>
+                    <a href="tel:+359888733606">{contact.phone}</a>
                   </li>
                   <li>
                     <span>{i18n["Имейл"] || "Email"}: </span>
@@ -107,14 +108,6 @@ export default function Footer({ locale }: { locale: string }) {
                 &copy; {i18n["Авторско право"] || "Copyright"} {new Date().getFullYear()}.{" "}
                 {i18n["Всички права запазени от"] || "All Rights Reserved by"}{" "}
                 <Link href={`/${locale}`}>SweetFiesta</Link>
-              </p>
-            </div>
-            <div className="col-md-6 text-right link">
-              <p>
-                {i18n["Разработен от"] || "Developed by"}{" "}
-                <a href="http://www.vertinity.com/" target="_blank" rel="noopener noreferrer">
-                  Vertinity
-                </a>
               </p>
             </div>
           </div>

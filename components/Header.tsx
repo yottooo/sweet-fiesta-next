@@ -32,12 +32,18 @@ export default function Header({ locale }: { locale: string }) {
                 <ul>
                   {contact.email ? (
                     <li>
-                      <i className="fas fa-envelope-open"></i> {contact.email}
+                      <i className="fas fa-envelope-open "></i> 
+                      <a href={`mailto:${contact.email}`}
+                      style={{ color: "white", textDecoration: "none" }}>{contact.email}
+                      </a>
                     </li>
                   ) : null}
                   {contact.phone ? (
                     <li>
-                      <i className="fas fa-phone"></i> {contact.phone}
+                      <i className="fas fa-phone"></i> 
+                      <a href="tel:+359888733606" style={{ color: "white", textDecoration: "none" }}>
+                        {contact.phone}
+                        </a>
                     </li>
                   ) : null}
                 </ul>

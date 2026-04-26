@@ -148,7 +148,11 @@ export default async function ContactsPage({
                           <div className="icon">
                             <i className="fas fa-phone"></i>
                           </div>
-                          <span>{phone}</span>
+                          <span>
+                            <a href={`tel:${phone.replace(/\s+/g, '')}`}>
+                              {phone}
+                            </a>
+                          </span>
                         </div>
                       </div>
                     ))}
@@ -158,7 +162,11 @@ export default async function ContactsPage({
                           <div className="icon">
                             <i className="fas fa-envelope-open"></i>
                           </div>
-                          <span>{email}</span>
+                          <span>
+                            <a href={`mailto:${email}`}>
+                              {email}
+                            </a>
+                          </span>
                         </div>
                       </div>
                     ))}

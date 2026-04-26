@@ -75,7 +75,9 @@ export default async function HomePage({
                     </div>
                     <div className="info">
                       <h4>{i18n["Phone"] || "Phone"}</h4>
-                      <span>{contact.phone}</span>
+                      <span>
+                      <a href="tel:+359888733606">{contact.phone}</a>
+                        </span>
                     </div>
                   </li>
                   <li>
@@ -84,7 +86,9 @@ export default async function HomePage({
                     </div>
                     <div className="info">
                       <h4>{i18n["Email"] || "Email"}</h4>
-                      <span>{contact.email}</span>
+                      <span>
+                        <a href={`mailto:${contact.email}`}>{contact.email}</a>
+                      </span>
                     </div>
                   </li>
                 </ul>
