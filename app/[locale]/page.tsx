@@ -5,7 +5,13 @@ import productsData from "@/data/products.json";
 import blogData from "@/data/blog.json";
 import contactData from "@/data/contact_us.json";
 import { getMessages } from "@/lib/i18n";
-import Link from "next/link";
+import HeroCarousel from "@/components/HeroCarousel";
+
+function getSortValue(position: unknown) {
+  const value = Number(position);
+
+  return Number.isFinite(value) ? value : Number.MAX_SAFE_INTEGER;
+}
 
 export default async function HomePage({
   params,
@@ -19,7 +25,13 @@ export default async function HomePage({
   const home = (homeData as any[])[0];
   const homeContent = home.translations[locale] || home.translations['en'];
   const categories = categoriesData as any[];
-  const products = (productsData as any[]).slice(0, 6);
+  const galleryProducts = (productsData as any[])
+    .filter((product) => {
+      const translation = product.translations[locale] || product.translations["en"];
+      return translation?.image && String(translation.is_published ?? "0") === "1";
+    })
+    .sort((left, right) => getSortValue(left.position) - getSortValue(right.position))
+    .slice(0, 6);
   const blogs = (blogData as any[]).sort((a, b) => new Date(b.blog_date).getTime() - new Date(a.blog_date).getTime());
   const contact = (contactData as any[])[0].translations[locale];
 
@@ -27,46 +39,14 @@ export default async function HomePage({
     <main>
       {/* Banner Area */}
       <div className="banner-area ds-fonts text-light text-center">
-        <div id="boot-carousel" className="carousel slide animate_text" data-ride="carousel">
-          <div className="carousel-inner transparent-nav heading-uppercase text-dark">
-            {sliders.map((slider, index) => {
-              const slideContent = slider.translations[locale] || slider.translations['en'];
-              return (
-                <div key={slider.id} className={`item ${index === 0 ? 'active' : ''} bg-cover`} 
-                     style={{ backgroundImage: `url(/uploads/images/homepage_slider_images/${slideContent.image})` }}>
-                  <div className="box-table shadow dark">
-                    <div className="box-cell">
-                      <div className="container">
-                        <div className="row">
-                          <div className="col-md-12 col-xs-12">
-                            <div className="content">
-                              <h2 data-animation="animated fadeInUp">{slideContent.title}</h2>
-                              <h1 data-animation="animated fadeInDown">{slideContent.subtitle}</h1>
-                              {slideContent.buttontittle && slideContent.buttonlink && (
-                                <a href={slideContent.buttonlink} className="btn btn-light border btn-md" data-animation="animated slideInUp">
-                                  {slideContent.buttontittle}
-                                </a>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-          
-          <a className="left carousel-control" href="#boot-carousel" data-slide="prev">
-            <i className="fa fa-angle-left"></i>
-            <span className="sr-only">{i18n['Previous'] || 'Previous'}</span>
-          </a>
-          <a className="right carousel-control" href="#boot-carousel" data-slide="next">
-            <i className="fa fa-angle-right"></i>
-            <span className="sr-only">{i18n['Next'] || 'Next'}</span>
-          </a>
-        </div>
+        <HeroCarousel
+          slides={sliders.map((slider) => ({
+            id: String(slider.id),
+            content: slider.translations[locale] || slider.translations["en"],
+          }))}
+          previousLabel={i18n["Previous"] || "Previous"}
+          nextLabel={i18n["Next"] || "Next"}
+        />
         <div className="wavesshape">
           <img src="/images/static/shape.png" alt="Shape" />
         </div>
@@ -127,12 +107,12 @@ export default async function HomePage({
                       <div key={cat.id} className="item-single pf-item equal-height">
                         <div className="item">
                           <div className="thumb">
-                            <Link href={`/${locale}/products?category=${cat.id}`}>
+                            <a href={`/${locale}/products?category=${cat.id}`}>
                               <img src={`/uploads/images/product_images/${catContent.image}`} alt={catContent.image_alt} title={catContent.image_title} style={{width: '100%'}} />
-                            </Link>
+                            </a>
                           </div>
                           <div className="info product-info-match-height">
-                            <h4><Link href={`/${locale}/products?category=${cat.id}`}>{catContent.title}</Link></h4>
+                            <h4><a href={`/${locale}/products?category=${cat.id}`}>{catContent.title}</a></h4>
                           </div>
                         </div>
                       </div>
@@ -146,7 +126,7 @@ export default async function HomePage({
       </div>
 
       {/* Gallery Section */}
-      <div id="gallery" className="gallery-area default-padding" style={{paddingTop: '65px'}}>
+      <div id="gallery" className="gallery-area uniform-gallery default-padding" style={{paddingTop: '65px'}}>
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2">
@@ -160,13 +140,13 @@ export default async function HomePage({
             <div className="row">
               <div className="col-md-12 text-center food-menu-content">
                 <div className="row magnific-mix-gallery text-center masonary">
-                  {products.map((product) => {
+                  {galleryProducts.map((product) => {
                     const content = product.translations[locale] || product.translations['en'];
                     return (
                       <div key={product.id} className="pf-item">
                         <div className="item-effect">
-                          <img src={`/uploads/images/product_images/${content.image || 'default.jpg'}`} alt={content.image_alt} title={content.image_title} />
-                          <a href={`/uploads/images/product_images/${content.image || 'default.jpg'}`} className="item popup-link"><i className="fa fa-plus"></i></a>
+                          <img src={`/uploads/images/product_images/${content.image}`} alt={content.image_alt} title={content.image_title} />
+                          <a href={`/uploads/images/product_images/${content.image}`} className="item popup-link"><i className="fa fa-plus"></i></a>
                         </div>
                       </div>
                     );
@@ -197,29 +177,29 @@ export default async function HomePage({
                   <div className="col-md-6 default">
                     <div className="single-item">
                       <div className="thumb">
-                        <Link href={`/${locale}/blog/${blogs[0].translations[locale]?.slug || blogs[0].translations['en']?.slug}`}>
+                        <a href={`/${locale}/blog/${blogs[0].translations[locale]?.slug || blogs[0].translations['en']?.slug}`}>
                           <img src={`/uploads/images/blog_images/${blogs[0].translations[locale]?.image || blogs[0].translations['en']?.image}`} alt="Blog" />
-                        </Link>
+                        </a>
                         <div className="meta">
                           <ul>
                             <li>
-                              <Link href={`/${locale}/blog/${blogs[0].translations[locale]?.slug || blogs[0].translations['en']?.slug}`}>
+                              <a href={`/${locale}/blog/${blogs[0].translations[locale]?.slug || blogs[0].translations['en']?.slug}`}>
                                 <i className="fas fa-calendar-alt"></i> {new Date(blogs[0].blog_date).toLocaleDateString(locale === 'bg' ? 'bg-BG' : 'en-US', { day: '2-digit', month: 'long', year: 'numeric' })}
-                              </Link>
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </div>
                       <div className="info">
                         <h3 className="margin-top-20">
-                          <Link href={`/${locale}/blog/${blogs[0].translations[locale]?.slug || blogs[0].translations['en']?.slug}`}>
+                          <a href={`/${locale}/blog/${blogs[0].translations[locale]?.slug || blogs[0].translations['en']?.slug}`}>
                             {blogs[0].translations[locale]?.title || blogs[0].translations['en']?.title}
-                          </Link>
+                          </a>
                         </h3>
                         <p>{(blogs[0].translations[locale]?.description || blogs[0].translations['en']?.description || '').replace(/<[^>]*>?/gm, '').substring(0, 176)}...</p>
-                        <Link className="btn circle btn-theme border btn-md" href={`/${locale}/blog/${blogs[0].translations[locale]?.slug || blogs[0].translations['en']?.slug}`}>
+                        <a className="btn circle btn-theme border btn-md" href={`/${locale}/blog/${blogs[0].translations[locale]?.slug || blogs[0].translations['en']?.slug}`}>
                           {i18n['Прочети още'] || 'Прочети още'}
-                        </Link>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -228,24 +208,24 @@ export default async function HomePage({
                     {blogs.slice(1, 3).map((blog) => (
                       <div key={blog.id} className="single-item flex">
                         <div className="thumb">
-                          <Link href={`/${locale}/blog/${blog.translations[locale]?.slug || blog.translations['en']?.slug}`}>
+                          <a href={`/${locale}/blog/${blog.translations[locale]?.slug || blog.translations['en']?.slug}`}>
                             <img src={`/uploads/images/blog_images/${blog.translations[locale]?.image || blog.translations['en']?.image}`} alt="Blog" />
-                          </Link>
+                          </a>
                         </div>
                         <div className="info">
                           <div className="meta">
                             <ul>
                               <li>
-                                <Link href={`/${locale}/blog/${blog.translations[locale]?.slug || blog.translations['en']?.slug}`}>
+                                <a href={`/${locale}/blog/${blog.translations[locale]?.slug || blog.translations['en']?.slug}`}>
                                   <i className="fas fa-calendar-alt"></i> {new Date(blog.blog_date).toLocaleDateString(locale === 'bg' ? 'bg-BG' : 'en-US', { day: '2-digit', month: 'long', year: 'numeric' })}
-                                </Link>
+                                </a>
                               </li>
                             </ul>
                           </div>
                           <h4>
-                            <Link href={`/${locale}/blog/${blog.translations[locale]?.slug || blog.translations['en']?.slug}`}>
+                            <a href={`/${locale}/blog/${blog.translations[locale]?.slug || blog.translations['en']?.slug}`}>
                               {blog.translations[locale]?.title || blog.translations['en']?.title}
-                            </Link>
+                            </a>
                           </h4>
                         </div>
                       </div>

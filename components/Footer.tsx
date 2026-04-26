@@ -1,5 +1,4 @@
 import { getMessages } from "@/lib/i18n";
-import Link from "next/link";
 import contactData from "@/data/contact_us.json";
 import imageData from "@/data/images.json";
 
@@ -67,11 +66,11 @@ export default function Footer({ locale }: { locale: string }) {
               <div className="f-item link">
                 <h4>{i18n['Сладка Фиеста'] || 'Sweet Fiesta'}</h4>
                 <ul>
-                  <li><Link href={`/${locale}`}>{i18n['Начало'] || 'Home'}</Link></li>
-                  <li><Link href={`/${locale}/about`}>{i18n['За нас'] || 'About Us'}</Link></li>
-                  <li><Link href={`/${locale}/products`}>{i18n['Продукти'] || 'Products'}</Link></li>
-                  <li><Link href={`/${locale}/blog`}>{i18n['Блог'] || 'Blog'}</Link></li>
-                  <li><Link href={`/${locale}/contacts`}>{i18n['Контакти'] || 'Contacts'}</Link></li>
+                  <li><a href={`/${locale}`}>{i18n['Начало'] || 'Home'}</a></li>
+                  <li><a href={`/${locale}/about`}>{i18n['За нас'] || 'About Us'}</a></li>
+                  <li><a href={`/${locale}/products`}>{i18n['Продукти'] || 'Products'}</a></li>
+                  <li><a href={`/${locale}/blog`}>{i18n['Блог'] || 'Blog'}</a></li>
+                  <li><a href={`/${locale}/contacts`}>{i18n['Контакти'] || 'Contacts'}</a></li>
                 </ul>
               </div>
             </div>
@@ -84,7 +83,7 @@ export default function Footer({ locale }: { locale: string }) {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <p>&copy; {i18n['Авторско право'] || 'Copyright'} {new Date().getFullYear()}. {i18n['Всички права запазени от'] || 'All Rights Reserved by'} <Link href={`/${locale}`}>SweetFiesta</Link></p>
+              <p>&copy; {i18n['Авторско право'] || 'Copyright'} {new Date().getFullYear()}. {i18n['Всички права запазени от'] || 'All Rights Reserved by'} <a href={`/${locale}`}>SweetFiesta</a></p>
             </div>
             <div className="col-md-6 text-right link">
               <p>{i18n['Разработен от'] || 'Developed by'} <a href="http://www.vertinity.com/" target="_blank" rel="noopener noreferrer">Vertinity</a></p>

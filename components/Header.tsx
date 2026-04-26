@@ -1,5 +1,4 @@
 import { getMessages } from "@/lib/i18n";
-import Link from "next/link";
 import contactData from "@/data/contact_us.json";
 
 export default function Header({ locale }: { locale: string }) {
@@ -62,38 +61,38 @@ export default function Header({ locale }: { locale: string }) {
               <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                 <i className="fa fa-bars"></i>
               </button>
-              <Link className="navbar-brand" href={`/${locale}`}>
+              <a className="navbar-brand" href={`/${locale}`}>
                 <img src="/images/static/logo.png" className="logo" alt="SweetFiesta" title="SweetFiesta" />
-              </Link>
+              </a>
             </div>
 
             <div className="collapse navbar-collapse" id="navbar-menu">
               <ul className="nav navbar-nav navbar-right" data-in="#" data-out="#">
                 <li>
-                  <Link href={`/${locale}`}>{i18n['Начало'] || 'Home'}</Link>
+                  <a href={`/${locale}`}>{i18n['Начало'] || 'Home'}</a>
                 </li>
                 <li>
-                  <Link href={`/${locale}/about`}>{i18n['За нас'] || 'About Us'}</Link>
+                  <a href={`/${locale}/about`}>{i18n['За нас'] || 'About Us'}</a>
                 </li>
                 <li>
-                  <Link href={`/${locale}/products`}>{i18n['Продукти'] || 'Products'}</Link>
+                  <a href={`/${locale}/products`}>{i18n['Продукти'] || 'Products'}</a>
                 </li>
                 <li>
-                  <Link href={`/${locale}/blog`}>{i18n['Блог'] || 'Blog'}</Link>
+                  <a href={`/${locale}/blog`}>{i18n['Блог'] || 'Blog'}</a>
                 </li>
                 <li>
-                  <Link href={`/${locale}/contacts`}>{i18n['Контакти'] || 'Contacts'}</Link>
+                  <a href={`/${locale}/contacts`}>{i18n['Контакти'] || 'Contacts'}</a>
                 </li>
 
                 <li className="nav-icon nav-langs">
-                  <Link href="/bg" className={`text-center ${locale === 'bg' ? 'sellang' : ''}`}>
+                  <a href="/bg" className={`text-center ${locale === 'bg' ? 'sellang' : ''}`}>
                     <img src="/images/static/bg.png" alt="БГР" />
                     <div>БГР</div>
-                  </Link>
-                  <Link href="/en" className={`text-center ${locale === 'en' ? 'sellang' : ''}`}>
+                  </a>
+                  <a href="/en" className={`text-center ${locale === 'en' ? 'sellang' : ''}`}>
                     <img src="/images/static/gb.png" alt="ENG" />
                     <div>ENG</div>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
