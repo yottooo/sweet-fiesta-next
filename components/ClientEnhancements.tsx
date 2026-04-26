@@ -25,6 +25,7 @@ type JQueryCollectionLike = {
   addClass: (className: string) => JQueryCollectionLike;
   removeClass: (className: string) => JQueryCollectionLike;
   hasClass: (className: string) => boolean;
+  next: (selector?: string) => JQueryCollectionLike;
   fadeOut: (speed?: string) => JQueryCollectionLike;
   find: (selector: string) => JQueryCollectionLike;
   data: (key: string) => unknown;
@@ -89,12 +90,16 @@ function initEqualHeights($: JQueryLike) {
 function initNiceSelect($: JQueryLike) {
   $("select").each(function eachSelect() {
     const select = $(this);
+    const selectElement = this as HTMLSelectElement;
 
-    if (select.hasClass("nice-select")) {
+    // niceSelect injects a sibling .nice-select element instead of marking the <select>,
+    // so route-based re-inits can double-wrap and break DOM reconciliation on navigation.
+    if (select.next(".nice-select").length || selectElement.dataset.sfNiceSelectInit === "1") {
       return;
     }
 
     select.niceSelect?.();
+    selectElement.dataset.sfNiceSelectInit = "1";
   });
 }
 
@@ -201,25 +206,37 @@ export default function ClientEnhancements() {
   const pathname = usePathname();
 
   useEffect(() => {
+    const frame = window.requestAnimationFrame(() => {
+      const preloader = document.querySelector<HTMLElement>(".se-pre-con");
+      if (preloader) {
+        preloader.style.opacity = "0";
+        preloader.style.pointerEvents = "none";
+        window.setTimeout(() => {
+          preloader.style.display = "none";
+        }, 250);
+      }
+    });
+
     const windowObject = window;
     const $ = windowObject.jQuery ?? windowObject.$;
 
     if (!$) {
-      return;
+      return () => {
+        window.cancelAnimationFrame(frame);
+      };
     }
 
-    const frame = window.requestAnimationFrame(() => {
-      $(".se-pre-con").fadeOut("slow");
+    const pluginFrame = window.requestAnimationFrame(() => {
       initWow(windowObject);
-      initCarouselAnimations($);
       initEqualHeights($);
-      initMagnificPopups($);
-      initCarousels($);
-      initNiceSelect($);
+      // Keep route-change enhancements minimal and DOM-safe.
+      // Legacy jQuery plugins that inject/remove sibling nodes can conflict
+      // with React unmounts during client-side navigation.
     });
 
     return () => {
       window.cancelAnimationFrame(frame);
+      window.cancelAnimationFrame(pluginFrame);
     };
   }, [pathname]);
 

@@ -2,7 +2,6 @@ import "./../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ClientEnhancements from "@/components/ClientEnhancements";
-import Script from "next/script";
 
 export async function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'bg' }];
@@ -47,28 +46,6 @@ export default async function LocaleLayout({
         {children}
         <Footer locale={locale} />
         <ClientEnhancements />
-        
-        {/* Load jQuery first */}
-        <Script src="/js/jquery-1.12.4.min.js" strategy="beforeInteractive" />
-        
-        {/* Load other plugins */}
-        <Script src="/js/bootstrap.min.js" strategy="afterInteractive" />
-        <Script src="/js/jquery.matchHeight.js" strategy="afterInteractive" />
-        <Script src="/js/equal-height.min.js" strategy="afterInteractive" />
-        <Script src="/js/jquery.appear.js" strategy="afterInteractive" />
-        <Script src="/js/jquery.easing.min.js" strategy="afterInteractive" />
-        <Script src="/js/jquery.magnific-popup.min.js" strategy="afterInteractive" />
-        <Script src="/js/modernizr.custom.13711.js" strategy="afterInteractive" />
-        <Script src="/js/owl.carousel.min.js" strategy="afterInteractive" />
-        <Script src="/js/wow.min.js" strategy="afterInteractive" />
-        <Script src="/js/isotope.pkgd.min.js" strategy="afterInteractive" />
-        <Script src="/js/imagesloaded.pkgd.min.js" strategy="afterInteractive" />
-        <Script src="/js/count-to.js" strategy="afterInteractive" />
-        <Script src="/js/jquery.nice-select.min.js" strategy="afterInteractive" />
-        <Script src="/js/bootsnav.js" strategy="afterInteractive" />
-        
-        {/* Main logic last */}
-        <Script src="/js/main.js" strategy="afterInteractive" />
       </body>
     </html>
   );

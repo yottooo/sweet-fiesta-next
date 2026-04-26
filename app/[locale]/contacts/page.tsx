@@ -124,16 +124,16 @@ export default async function ContactsPage({
         <div className="container">
           <div className="row">
             <div className="contact-box">
-              <div className="col-md-6 info">
+              <div className="col-md-10 col-md-offset-1 info text-center">
                 <h2>{translation.title || labels.info}</h2>
                 {translation.description ? (
                   <div dangerouslySetInnerHTML={{ __html: translation.description }} />
                 ) : null}
 
                 <div className="address-items">
-                  <div className="row">
+                  <div className="row" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'flex-start' }}>
                     {translation.address ? (
-                      <div className="col-lg-12 col-md-12 col-sm-6 equal-height">
+                      <div className="col-lg-3 col-md-4 col-sm-6 equal-height">
                         <div className="item">
                           <div className="icon">
                             <i className="fas fa-map-marked-alt"></i>
@@ -142,11 +142,8 @@ export default async function ContactsPage({
                         </div>
                       </div>
                     ) : null}
-                  </div>
-
-                  <div className="row">
                     {phones.map((phone) => (
-                      <div key={phone} className="col-lg-6 col-md-6 col-sm-6 equal-height">
+                      <div key={phone} className="col-lg-3 col-md-4 col-sm-6 equal-height">
                         <div className="item">
                           <div className="icon">
                             <i className="fas fa-phone"></i>
@@ -155,11 +152,8 @@ export default async function ContactsPage({
                         </div>
                       </div>
                     ))}
-                  </div>
-
-                  <div className="row">
                     {emails.map((email) => (
-                      <div key={email} className="col-lg-6 col-md-6 col-sm-6 equal-height">
+                      <div key={email} className="col-lg-3 col-md-4 col-sm-6 equal-height">
                         <div className="item">
                           <div className="icon">
                             <i className="fas fa-envelope-open"></i>
