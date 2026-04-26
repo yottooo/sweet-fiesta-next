@@ -1,9 +1,21 @@
-import { getMessages } from "@/lib/i18n";
+import Link from "next/link";
+import aboutData from "@/data/about_us.json";
 import contactData from "@/data/contact_us.json";
+import { getMessages } from "@/lib/i18n";
+import {
+  AboutEntry,
+  ContactEntry,
+  getAboutPath,
+  getContactsPath,
+  getLocalizedTranslation,
+} from "@/lib/site";
 
 export default function Header({ locale }: { locale: string }) {
   const i18n = getMessages(locale);
-  const contact = (contactData as any[])[0].translations[locale];
+  const contact = getLocalizedTranslation((contactData as ContactEntry[])[0], locale);
+  const aboutTranslation = getLocalizedTranslation((aboutData as AboutEntry[])[0], locale);
+  const aboutPath = getAboutPath(locale, aboutTranslation.slug);
+  const contactsPath = getContactsPath(locale);
 
   return (
     <>
@@ -13,47 +25,49 @@ export default function Header({ locale }: { locale: string }) {
             <div className="col-md-8 address-info text-left">
               <div className="info box">
                 <ul>
-                  {contact.email && (
+                  {contact.email ? (
                     <li>
                       <i className="fas fa-envelope-open"></i> {contact.email}
                     </li>
-                  )}
-                  {contact.phone && (
+                  ) : null}
+                  {contact.phone ? (
                     <li>
                       <i className="fas fa-phone"></i> {contact.phone}
                     </li>
-                  )}
+                  ) : null}
                 </ul>
               </div>
             </div>
+
             <div className="col-md-4 social text-right">
               <ul>
-                {contact.facebook && (
+                {contact.facebook ? (
                   <li>
                     <a href={contact.facebook} target="_blank" rel="noopener noreferrer">
                       <i className="fab fa-facebook-f"></i>
                     </a>
                   </li>
-                )}
-                {contact.youtube && (
+                ) : null}
+                {contact.youtube ? (
                   <li>
                     <a href={contact.youtube} target="_blank" rel="noopener noreferrer">
                       <i className="fab fa-youtube"></i>
                     </a>
                   </li>
-                )}
-                {contact.linkedin && (
+                ) : null}
+                {contact.linkedin ? (
                   <li>
                     <a href={contact.linkedin} target="_blank" rel="noopener noreferrer">
                       <i className="fab fa-linkedin"></i>
                     </a>
                   </li>
-                )}
+                ) : null}
               </ul>
             </div>
           </div>
         </div>
       </div>
+
       <header id="home">
         <nav className="navbar navbar-default navbar-fixed dark no-background bootsnav inc-border active-border">
           <div className="container">
@@ -61,38 +75,38 @@ export default function Header({ locale }: { locale: string }) {
               <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                 <i className="fa fa-bars"></i>
               </button>
-              <a className="navbar-brand" href={`/${locale}`}>
+              <Link className="navbar-brand" href={`/${locale}`}>
                 <img src="/images/static/logo.png" className="logo" alt="SweetFiesta" title="SweetFiesta" />
-              </a>
+              </Link>
             </div>
 
             <div className="collapse navbar-collapse" id="navbar-menu">
               <ul className="nav navbar-nav navbar-right" data-in="#" data-out="#">
                 <li>
-                  <a href={`/${locale}`}>{i18n['Начало'] || 'Home'}</a>
+                  <Link href={`/${locale}`}>{i18n["Начало"] || "Home"}</Link>
                 </li>
                 <li>
-                  <a href={`/${locale}/about`}>{i18n['За нас'] || 'About Us'}</a>
+                  <Link href={aboutPath}>{i18n["За нас"] || "About Us"}</Link>
                 </li>
                 <li>
-                  <a href={`/${locale}/products`}>{i18n['Продукти'] || 'Products'}</a>
+                  <Link href={`/${locale}/products`}>{i18n["Продукти"] || "Products"}</Link>
                 </li>
                 <li>
-                  <a href={`/${locale}/blog`}>{i18n['Блог'] || 'Blog'}</a>
+                  <Link href={`/${locale}/blog`}>{i18n["Блог"] || "Blog"}</Link>
                 </li>
                 <li>
-                  <a href={`/${locale}/contacts`}>{i18n['Контакти'] || 'Contacts'}</a>
+                  <Link href={contactsPath}>{i18n["Контакти"] || "Contacts"}</Link>
                 </li>
 
                 <li className="nav-icon nav-langs">
-                  <a href="/bg" className={`text-center ${locale === 'bg' ? 'sellang' : ''}`}>
-                    <img src="/images/static/bg.png" alt="БГР" />
-                    <div>БГР</div>
-                  </a>
-                  <a href="/en" className={`text-center ${locale === 'en' ? 'sellang' : ''}`}>
+                  <Link href="/bg" className={`text-center ${locale === "bg" ? "sellang" : ""}`}>
+                    <img src="/images/static/bg.png" alt="БГ" />
+                    <div>БГ</div>
+                  </Link>
+                  <Link href="/en" className={`text-center ${locale === "en" ? "sellang" : ""}`}>
                     <img src="/images/static/gb.png" alt="ENG" />
                     <div>ENG</div>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

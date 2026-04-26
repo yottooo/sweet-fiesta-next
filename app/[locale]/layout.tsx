@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
 import "./../globals.css";
-import { getMessages } from "@/lib/i18n";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ClientEnhancements from "@/components/ClientEnhancements";
 import Script from "next/script";
 
 export async function generateStaticParams() {
@@ -42,12 +41,12 @@ export default async function LocaleLayout({
         <link rel="stylesheet" href="/css/site-overrides.css" />
       </head>
       <body>
-        {/* Preloader is hidden for now to allow viewing content */}
-        <div className="se-pre-con" style={{ display: 'none' }}></div>
+        <div className="se-pre-con"></div>
 
         <Header locale={locale} />
         {children}
         <Footer locale={locale} />
+        <ClientEnhancements />
         
         {/* Load jQuery first */}
         <Script src="/js/jquery-1.12.4.min.js" strategy="beforeInteractive" />

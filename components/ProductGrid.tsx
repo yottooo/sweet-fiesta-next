@@ -1,76 +1,146 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import {
+  CategoryEntry,
+  ProductEntry,
+  getCategoryFilterParam,
+  getCategoryFilterTokens,
+  getLocalizedTranslation,
+  resolveCategoryFilter,
+} from "@/lib/site";
 
-export default function ProductGrid({ 
-  products, 
-  categories, 
-  locale, 
-  allLabel 
-}: { 
-  products: any[], 
-  categories: any[], 
-  locale: string,
-  allLabel: string
-}) {
+type ProductGridProps = {
+  products: ProductEntry[];
+  categories: CategoryEntry[];
+  locale: string;
+  allLabel: string;
+};
+
+export default function ProductGrid({
+  products,
+  categories,
+  locale,
+  allLabel,
+}: ProductGridProps) {
+  const searchParams = useSearchParams();
   const [filter, setFilter] = useState("*");
 
-  const filteredProducts = filter === "*" 
-    ? products 
-    : products.filter(p => p.category_id === filter);
+  useEffect(() => {
+    const requestedFilter =
+      searchParams.get(getCategoryFilterParam(locale)) ??
+      searchParams.get("category") ??
+      searchParams.get("kategoriya");
+
+    setFilter(resolveCategoryFilter(categories, requestedFilter));
+  }, [categories, locale, searchParams]);
+
+  const filteredProducts =
+    filter === "*" ? products : products.filter((product) => product.category_id === filter);
+
+  const applyFilter = (nextFilter: string) => {
+    setFilter(nextFilter);
+
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const nextUrl = new URL(window.location.href);
+    nextUrl.searchParams.delete("category");
+    nextUrl.searchParams.delete("kategoriya");
+
+    if (nextFilter !== "*") {
+      const selectedCategory = categories.find((category) => category.id === nextFilter);
+
+      if (selectedCategory) {
+        const categoryTokens = getCategoryFilterTokens(selectedCategory);
+        nextUrl.searchParams.set(
+          getCategoryFilterParam(locale),
+          locale === "bg" ? categoryTokens.bg : categoryTokens.en,
+        );
+      }
+    }
+
+    window.history.replaceState(window.history.state, "", nextUrl);
+  };
 
   return (
-    <div className="portfolio-items-area">
+    <div className="food-menu-area text-center">
       <div className="row">
-        <div className="col-md-12 portfolio-content">
-          {/* Category Filters */}
-          <div className="mix-item-menu text-center">
-            <button 
-              className={filter === "*" ? "active" : ""} 
-              onClick={() => setFilter("*")}
-            >
-              {allLabel}
-            </button>
-            {categories.map(cat => {
-              const catContent = cat.translations[locale] || cat.translations['en'];
-              return (
-                <button 
-                  key={cat.id} 
-                  className={filter === cat.id ? "active" : ""} 
-                  onClick={() => setFilter(cat.id)}
+        <div className="col-md-12 food-menu-content">
+          <div className="row">
+            <div className="col-md-3">
+              <div className="mix-item-menu text-center">
+                <button
+                  type="button"
+                  className={filter === "*" ? "active" : ""}
+                  onClick={() => applyFilter("*")}
                 >
-                  {catContent.title}
+                  {allLabel}
                 </button>
-              );
-            })}
-          </div>
+                {categories.map((category) => {
+                  const categoryContent = getLocalizedTranslation(category, locale);
 
-          {/* Products Grid */}
-          <div className="row portfolio-items">
-            {filteredProducts.map(product => {
-              const content = product.translations[locale] || product.translations['en'];
-              const category = categories.find(c => c.id === product.category_id);
-              const catTitle = category?.translations[locale]?.title || "";
-              
-              return (
-                <div key={product.id} className="col-md-4 col-sm-6 single-item mt-30">
-                  <div className="item">
-                    <div className="thumb">
-                      <img 
-                        src={`/uploads/images/product_images/${content.image || 'default.jpg'}`} 
-                        alt={content.image_alt || content.title} 
-                      />
-                      <div className="overlay">
-                        <div className="content">
-                          <h4>{content.title}</h4>
-                          <span>{catTitle}</span>
+                  return (
+                    <button
+                      key={category.id}
+                      type="button"
+                      className={filter === category.id ? "active" : ""}
+                      onClick={() => applyFilter(category.id)}
+                    >
+                      {categoryContent.title}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="col-md-9">
+              <div className="row text-center masonary">
+                <div className="menu-lists text-center col-3">
+                  {filteredProducts.map((product) => {
+                    const productContent = getLocalizedTranslation(product, locale);
+                    const category = categories.find(
+                      (categoryItem) => categoryItem.id === product.category_id,
+                    );
+                    const categoryTitle = category
+                      ? getLocalizedTranslation(category, locale).title
+                      : "";
+                    const hasImage = Boolean(productContent.image);
+
+                    return (
+                      <div key={product.id} className="item-single pf-item">
+                        <div className="item item-p-p">
+                          {hasImage ? (
+                            <div className="thumb">
+                              <img
+                                src={`/uploads/images/product_images/${productContent.image}`}
+                                alt={productContent.image_alt || productContent.title}
+                                title={productContent.image_title || productContent.title}
+                              />
+                              <div className="overlay">
+                                <div className="content">
+                                  <h4>{productContent.title}</h4>
+                                  <span>{categoryTitle}</span>
+                                </div>
+                              </div>
+                            </div>
+                          ) : null}
+
+                          <div className="info product-info-match-height">
+                            <h4>{productContent.title}</h4>
+                            {productContent.description?.trim() ? (
+                              <div dangerouslySetInnerHTML={{ __html: productContent.description }} />
+                            ) : null}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                    );
+                  })}
                 </div>
-              );
-            })}
+              </div>
+            </div>
           </div>
         </div>
       </div>
