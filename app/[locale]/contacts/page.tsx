@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import contactData from "@/data/contact_us.json";
 import { getLocalizedTranslation } from "@/lib/site";
+import {
+  JsonLd,
+  breadcrumbJsonLd,
+  createSeoMetadata,
+  getHomePath,
+  getLocalizedContactsPath,
+  organizationJsonLd,
+} from "@/lib/seo";
 
 type ContactTranslation = {
   title: string;
@@ -61,10 +69,19 @@ export async function generateMetadata({
   const contactEntry = (contactData as ContactEntry[])[0];
   const translation = getLocalizedTranslation(contactEntry, locale);
 
-  return {
+  return createSeoMetadata({
     title: translation.seo_title || translation.title,
     description: translation.seo_description || translation.title,
-  };
+    path: getLocalizedContactsPath(locale),
+    alternatePaths: {
+      bg: getLocalizedContactsPath("bg"),
+      en: getLocalizedContactsPath("en"),
+    },
+    image: translation.image
+      ? `/uploads/images/contact_image/${translation.image}`
+      : undefined,
+    locale,
+  });
 }
 
 export default async function ContactsPage({
@@ -93,6 +110,13 @@ export default async function ContactsPage({
 
   return (
     <main>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: labels.home, path: getHomePath(locale) },
+          { name: labels.contacts, path: getLocalizedContactsPath(locale) },
+        ])}
+      />
+      <JsonLd data={organizationJsonLd()} />
       <div
         className="breadcrumb-area shadow text-center dark bg-fixed text-light"
         style={{

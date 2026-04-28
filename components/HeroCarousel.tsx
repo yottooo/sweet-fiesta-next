@@ -6,8 +6,8 @@ type SlideContent = {
   image: string;
   title: string;
   subtitle: string;
-  buttontittle?: string;
-  buttonlink?: string;
+  buttontittle?: string | null;
+  buttonlink?: string | null;
 };
 
 type HeroCarouselProps = {

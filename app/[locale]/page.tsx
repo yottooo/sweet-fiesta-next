@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import sliderData from "@/data/homepage_slider.json";
 import homeData from "@/data/home.json";
@@ -21,6 +22,35 @@ import {
   stripHtml,
   truncate,
 } from "@/lib/site";
+import {
+  JsonLd,
+  createSeoMetadata,
+  getHomePath,
+  organizationJsonLd,
+} from "@/lib/seo";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const homeContent = getLocalizedTranslation((homeData as HomeEntry[])[0], locale);
+
+  return createSeoMetadata({
+    title: homeContent.seo_title || homeContent.title,
+    description: homeContent.seo_description || homeContent.description,
+    path: getHomePath(locale),
+    alternatePaths: {
+      bg: getHomePath("bg"),
+      en: getHomePath("en"),
+    },
+    image: homeContent.image
+      ? `/uploads/images/homepage_slider_images/${homeContent.image}`
+      : undefined,
+    locale,
+  });
+}
 
 export default async function HomePage({
   params,
@@ -45,6 +75,16 @@ export default async function HomePage({
 
   return (
     <main>
+      <JsonLd data={organizationJsonLd()} />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: "Sweet Fiesta",
+          url: "https://sweetfiesta.bg",
+          inLanguage: locale,
+        }}
+      />
       <div className="banner-area ds-fonts text-light text-center">
         <HeroCarousel
           slides={sliders.map((slider) => ({

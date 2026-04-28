@@ -50,31 +50,6 @@ export default function Header({ locale }: { locale: string }) {
               </div>
             </div>
 
-            <div className="col-md-4 social text-right">
-              <ul>
-                {contact.facebook ? (
-                  <li>
-                    <a href={contact.facebook} target="_blank" rel="noopener noreferrer">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                ) : null}
-                {contact.youtube ? (
-                  <li>
-                    <a href={contact.youtube} target="_blank" rel="noopener noreferrer">
-                      <i className="fab fa-youtube"></i>
-                    </a>
-                  </li>
-                ) : null}
-                {contact.linkedin ? (
-                  <li>
-                    <a href={contact.linkedin} target="_blank" rel="noopener noreferrer">
-                      <i className="fab fa-linkedin"></i>
-                    </a>
-                  </li>
-                ) : null}
-              </ul>
-            </div>
           </div>
         </div>
       </div>

@@ -179,6 +179,33 @@
 }
 
 @media only screen and (max-width: 991px) {
+  nav.navbar.bootsnav .navbar-collapse.collapse.in {
+    background: #fff;
+  }
+
+  nav.navbar.bootsnav.no-background .navbar-collapse ul.nav > li > a,
+  nav.navbar.bootsnav.no-background .navbar-collapse ul.nav > li > a:focus,
+  nav.navbar.bootsnav.no-background .navbar-collapse ul.nav > li > a:hover {
+    color: #232323 !important;
+    background-color: transparent !important;
+  }
+
+  nav.navbar.bootsnav .navbar-collapse ul.nav > li > a {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  nav.navbar.bootsnav ul.nav > li.nav-langs {
+    display: flex;
+    border-left: 0;
+    padding-left: 0;
+    gap: 12px;
+  }
+
+  nav.navbar.bootsnav ul.nav > li.nav-langs > a {
+    width: auto;
+  }
+
   #portfolio-grid.menu-lists.col-4,
   #portfolio-grid.menu-lists.col-3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));

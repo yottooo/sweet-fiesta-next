@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Suspense } from "react";
 import productsData from "@/data/products.json";
 import categoriesData from "@/data/categories.json";
 import productsPageData from "@/data/products_page.json";
@@ -13,6 +14,13 @@ import {
   getSortValue,
   stripHtml,
 } from "@/lib/site";
+import {
+  JsonLd,
+  breadcrumbJsonLd,
+  createSeoMetadata,
+  getHomePath,
+  getProductsPath,
+} from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -23,10 +31,19 @@ export async function generateMetadata({
   const pageEntry = (productsPageData as ProductsPageEntry[])[0];
   const pageInfo = getLocalizedTranslation(pageEntry, locale);
 
-  return {
+  return createSeoMetadata({
     title: pageInfo.seo_title || pageInfo.title,
-    description: pageInfo.seo_description || pageInfo.title,
-  };
+    description: pageInfo.seo_description || pageInfo.description || pageInfo.title,
+    path: getProductsPath(locale),
+    alternatePaths: {
+      bg: getProductsPath("bg"),
+      en: getProductsPath("en"),
+    },
+    image: pageInfo.image
+      ? `/uploads/images/product_page_seo_image/${pageInfo.image}`
+      : undefined,
+    locale,
+  });
 }
 
 export default async function ProductsPage({
@@ -48,6 +65,28 @@ export default async function ProductsPage({
 
   return (
     <main>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: i18n["ÐÐ°Ñ‡Ð°Ð»Ð¾"] || "Home", path: getHomePath(locale) },
+          { name: pageInfo.title, path: getProductsPath(locale) },
+        ])}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: pageInfo.title,
+          itemListElement: products.map((product, index) => {
+            const productContent = getLocalizedTranslation(product, locale);
+
+            return {
+              "@type": "ListItem",
+              position: index + 1,
+              name: productContent.title,
+            };
+          }),
+        }}
+      />
       <div
         className="breadcrumb-area shadow text-center dark bg-fixed text-light"
         style={{ backgroundImage: `url(/uploads/images/product_page_seo_image/${pageInfo.image})` }}
@@ -84,12 +123,14 @@ export default async function ProductsPage({
 
       <div className="food-menu-area inc-isotop default-padding">
         <div className="container">
-          <ProductGrid
+          <Suspense fallback={null}>
+            <ProductGrid
             products={products}
             categories={categories}
             locale={locale}
             allLabel={i18n["Всички"] || "All"}
-          />
+            />
+          </Suspense>
         </div>
       </div>
     </main>

@@ -2,6 +2,15 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import blogData from "@/data/blog.json";
 import { formatDisplayDate, getLocalizedTranslation } from "@/lib/site";
+import {
+  JsonLd,
+  absoluteUrl,
+  breadcrumbJsonLd,
+  createSeoMetadata,
+  getBlogPath,
+  getBlogPostPath,
+  getHomePath,
+} from "@/lib/seo";
 
 type BlogTranslation = {
   title: string;
@@ -12,11 +21,13 @@ type BlogTranslation = {
   seo_title?: string;
   seo_description?: string;
   slug: string;
+  updated_at?: string;
 };
 
 type BlogEntry = {
   id: string;
   blog_date: string;
+  updated_at?: string;
   translations: Record<string, BlogTranslation>;
 };
 
@@ -76,10 +87,33 @@ export async function generateMetadata({
 
   const translation = getLocalizedTranslation(post, locale);
 
-  return {
+  const image = translation.image
+    ? `/uploads/images/blog_images/${translation.image}`
+    : BLOG_COVER;
+  const alternatePaths = Object.fromEntries(
+    ["bg", "en"].flatMap((alternateLocale) => {
+      const alternateTranslation = post.translations[alternateLocale] || post.translations.en;
+      return alternateTranslation?.slug
+        ? [[alternateLocale, getBlogPostPath(alternateLocale, alternateTranslation.slug)]]
+        : [];
+    }),
+  );
+
+  return createSeoMetadata({
     title: translation.seo_title || translation.title,
     description: translation.seo_description || translation.title,
-  };
+    path: getBlogPostPath(locale, translation.slug),
+    alternatePaths,
+    image,
+    locale,
+    type: "article",
+    publishedTime: currentPostDate(post.blog_date),
+    modifiedTime: post.updated_at ? currentPostDate(post.updated_at) : undefined,
+  });
+}
+
+function currentPostDate(value: string) {
+  return new Date(value).toISOString();
 }
 
 export default async function BlogDetailPage({
@@ -106,6 +140,41 @@ export default async function BlogDetailPage({
 
   return (
     <main>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: labels.home, path: getHomePath(locale) },
+          { name: labels.blog, path: getBlogPath(locale) },
+          { name: currentTranslation.title, path: getBlogPostPath(locale, currentTranslation.slug) },
+        ])}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          headline: currentTranslation.title,
+          description: currentTranslation.seo_description || currentTranslation.title,
+          image: currentTranslation.image
+            ? absoluteUrl(`/uploads/images/blog_images/${currentTranslation.image}`)
+            : absoluteUrl(BLOG_COVER),
+          datePublished: currentPostDate(currentPost.blog_date),
+          dateModified: currentPost.updated_at
+            ? currentPostDate(currentPost.updated_at)
+            : currentPostDate(currentPost.blog_date),
+          mainEntityOfPage: absoluteUrl(getBlogPostPath(locale, currentTranslation.slug)),
+          author: {
+            "@type": "Organization",
+            name: "Sweet Fiesta",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "Sweet Fiesta",
+            logo: {
+              "@type": "ImageObject",
+              url: absoluteUrl("/images/static/logo.png"),
+            },
+          },
+        }}
+      />
       <div
         className="breadcrumb-area shadow text-center dark bg-fixed text-light"
         style={{ backgroundImage: `url(${BLOG_COVER})` }}

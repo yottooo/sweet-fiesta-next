@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import blogData from "@/data/blog.json";
 import { formatDisplayDate, getLocalizedTranslation, stripHtml, truncate } from "@/lib/site";
+import {
+  JsonLd,
+  breadcrumbJsonLd,
+  createSeoMetadata,
+  getBlogPath,
+  getHomePath,
+} from "@/lib/seo";
 
 type BlogTranslation = {
   title: string;
@@ -49,13 +56,20 @@ export async function generateMetadata({
   const { locale } = await params;
   const labels = getLabels(locale);
 
-  return {
+  return createSeoMetadata({
     title:
       locale === "bg"
         ? "Блог | Сладка Фиеста"
         : "Blog | Sweet Fiesta",
     description: labels.description,
-  };
+    path: getBlogPath(locale),
+    alternatePaths: {
+      bg: getBlogPath("bg"),
+      en: getBlogPath("en"),
+    },
+    image: BLOG_COVER,
+    locale,
+  });
 }
 
 export default async function BlogPage({
@@ -71,6 +85,12 @@ export default async function BlogPage({
 
   return (
     <main>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: labels.home, path: getHomePath(locale) },
+          { name: labels.blog, path: getBlogPath(locale) },
+        ])}
+      />
       <div
         className="breadcrumb-area shadow text-center dark bg-fixed text-light"
         style={{ backgroundImage: `url(${BLOG_COVER})` }}

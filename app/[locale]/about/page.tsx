@@ -10,6 +10,14 @@ import {
   getAboutPath,
   getLocalizedTranslation,
 } from "@/lib/site";
+import {
+  JsonLd,
+  breadcrumbJsonLd,
+  createSeoMetadata,
+  getAboutIndexPath,
+  getHomePath,
+  getLocalizedAboutPath,
+} from "@/lib/seo";
 
 function getLabels(locale: string) {
   if (locale === "bg") {
@@ -56,10 +64,29 @@ export function getAboutMetadata(locale: string, slug?: string): Metadata {
 
   const translation = getLocalizedTranslation(selectedEntry, locale);
 
-  return {
+  const path = slug
+    ? getLocalizedAboutPath(locale, translation.slug)
+    : getAboutIndexPath(locale);
+  const alternatePaths = slug
+    ? {
+        bg: getLocalizedAboutPath("bg", getLocalizedTranslation(selectedEntry, "bg").slug),
+        en: getLocalizedAboutPath("en", getLocalizedTranslation(selectedEntry, "en").slug),
+      }
+    : {
+        bg: getAboutIndexPath("bg"),
+        en: getAboutIndexPath("en"),
+      };
+
+  return createSeoMetadata({
     title: translation.seo_title || translation.title,
     description: translation.seo_description || translation.title,
-  };
+    path,
+    alternatePaths,
+    image: translation.image
+      ? `/uploads/images/about_us_images/${translation.image}`
+      : undefined,
+    locale,
+  });
 }
 
 export async function generateMetadata({
@@ -87,6 +114,17 @@ export function renderAboutPage(locale: string, slug?: string) {
 
   return (
     <main>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: labels.home, path: getHomePath(locale) },
+          {
+            name: labels.section,
+            path: slug
+              ? getLocalizedAboutPath(locale, currentTranslation.slug)
+              : getAboutIndexPath(locale),
+          },
+        ])}
+      />
       <div
         className="breadcrumb-area shadow text-center dark bg-fixed text-light"
         style={{
